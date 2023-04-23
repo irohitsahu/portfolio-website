@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Bitter-Medium';
+    src: url(../font/Bitter-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url(../font/Bitter.ttf);
+}
+
+@font-face {
+    font-family: 'Bitter-SemiBold';
+    src: url(../font/Bitter-SemiBold.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px;
+    display: grid;
+    grid-template-rows: 2fr 10fr;
+}
+
+.container .header-grid {
+    display: grid;
+    grid-template-areas: 'name name img'
+        'what-iam mobile img'
+        'what-iam email img'
+        'what-iam address img'
+        'about about img';
+    position: relative;
+    background: #F9BC2F;
+    margin: 10px 10px 0px 10px;
+    min-height: 150px;
+
+}
+
+.container .header-grid .name {
+    grid-area: name;
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    font-family: 'Bitter-Medium', sans-serif;
+    color: #404040;
+    font-size: 38px;
+    font-style: normal;
+    text-align: left;
+}
+
+.container .header-grid .img {
+    grid-area: img;
+    position: relative;
+    width: 150px;
+    padding: 10px;
+}
+
+.container .header-grid .what-iam {
+    grid-area: what-iam;
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    font-family: 'Bitter-Medium', sans-serif;
+    color: #404040;
+    font-size: 16px;
+    font-style: left;
+}
+
+.container .header-grid .mobile {
+    grid-area: mobile;
+    position: relative;
+    width: 600px;
+    font-family: 'Bitter', sans-serif;
+    color: #404040;
+    font-size: 16px;
+    font-style: normal;
+    text-align: right;
+}
+
+.container .header-grid .email {
+    grid-area: email;
+    position: relative;
+    width: 600px;
+    font-family: 'Bitter', sans-serif;
+    color: #404040;
+    font-size: 16px;
+    font-style: normal;
+    text-align: right;
+}
+
+.container .header-grid .address {
+    grid-area: address;
+    position: relative;
+    width: 600px;
+    font-family: 'Bitter', sans-serif;
+    color: #404040;
+    font-size: 16px;
+    font-style: normal;
+    text-align: right;
+}
+
+.container .header-grid .about {
+    grid-area: about;
+    position: relative;
+    width: 800px;
+    padding: 10px;
+    background-color: #bfbfbf;
+    font-family: 'Bitter-Medium', sans-serif;
+    color: #404040;
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+}
+
+.container .body-grid {
+    display: grid;
+    grid-template-areas: 'profile-head project-head projects-head';
+    position: relative;
+    margin: 10px 10px 0px 10px;
+    min-height: 150px;
+}
+
+.container .body-grid .profile {
+    grid-area: profile-head;
+    position: relative;
+}
