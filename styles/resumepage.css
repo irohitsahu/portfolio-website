@@ -13,6 +13,16 @@
     src: url(../font/Bitter-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: 'Bitter-Light';
+    src: url(../font/Bitter-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Bitter-Medium';
+    src: url(../font/Bitter-Medium.ttf);
+}
+
 body {
     display: flex;
     flex-direction: row;
@@ -27,7 +37,7 @@ body {
     max-width: 1000px;
     margin: 50px;
     display: grid;
-    grid-template-rows: 2fr 10fr;
+    grid-template-rows: 2fr 8fr;
 }
 
 .container .header-grid {
@@ -122,42 +132,49 @@ body {
 
 .container .body-grid {
     display: grid;
-    grid-template-areas: 'profile-head project-head project-head projects-head'
-        'profile-body project-body project-body project-body'
-        'skills-head skills-head education-head education-head'
-        'skills-body skills-body education-body education-body'
-        'skills-body skills-body education-body education-body'
-        'por-head por-head education-body education-body'
-        'por-body por-body education-body education-body'
-        'por-body por-body intrests-head intrests-head'
-        'por-body por-body intrests-body intrests-body';
+    grid-template-areas: 'profile-head project-head project-head projects-head projects-head projects-head'
+        'profile-body project-body project-body project-body project-body project-body'
+        'skills-head skills-head education-head education-head education-head education-head'
+        'skills-body skills-body education-body education-body education-body education-body'
+        'skills-body skills-body education-body education-body education-body education-body'
+        'por-head por-head education-body education-body education-body education-body'
+        'por-body por-body education-body education-body education-body education-body'
+        'por-body por-body intrests-head intrests-head intrests-head intrests-head'
+        'por-body por-body intrests-body intrests-body intrests-body intrests-body';
     position: relative;
-    margin: 10px 10px 0px 10px;
-    min-height: 150px;
+    margin: 10px;
 }
 
 .container .body-grid .profile-head {
     grid-area: profile-head;
     position: relative;
     text-align: left;
+    border-style: double double none none;
+    border-color: #F9BC2F;
 }
 
 .container .body-grid .profile-body {
     grid-area: profile-body;
     position: relative;
     text-align: left;
+    border-style: none double double none;
+    border-color: #F9BC2F;
 }
 
 .container .body-grid .project-head {
     grid-area: project-head;
     position: relative;
     text-align: left;
+    border-style: double none none none;
+    border-color: #F9BC2F;
 }
 
 .container .body-grid .project-body {
     grid-area: project-body;
     position: relative;
     text-align: left;
+    border-style: none none double none;
+    border-color: #F9BC2F;
 }
 
 .container .body-grid .skills-head {
@@ -170,18 +187,24 @@ body {
     grid-area: skills-body;
     position: relative;
     text-align: left;
+    border-style: none none double none;
+    border-color: #F9BC2F;
 }
 
 .container .body-grid .education-head {
     grid-area: education-head;
     position: relative;
     text-align: left;
+    border-style: none none none double;
+    border-color: #F9BC2F;
 }
 
 .container .body-grid .education-body {
     grid-area: education-body;
     position: relative;
     text-align: left;
+    border-style: none none none double;
+    border-color: #F9BC2F;
 }
 
 .container .body-grid .por-head {
@@ -194,16 +217,72 @@ body {
     grid-area: por-body;
     position: relative;
     text-align: left;
+    border-style: none none double none;
+    border-color: #F9BC2F;
 }
 
 .container .body-grid .intrests-head {
     grid-area: intrests-head;
     position: relative;
     text-align: left;
+    border-style: double none none double;
+    border-color: #F9BC2F;
 }
 
 .container .body-grid .intrests-body {
     grid-area: intrests-body;
     position: relative;
     text-align: left;
+    border-style: none none double double;
+    border-color: #F9BC2F;
+}
+
+.container .body-grid .body-heading {
+    height: 20px;
+    font-family: 'Bitter-SemiBold', sans-serif;
+    font-size: 20px;
+    color: #404040;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.container .body-grid .body-info {
+    font-family: 'Bitter', sans-serif;
+    font-size: 14px;
+    color: #595959;
+    padding-left: 10px;
+}
+
+img {
+    display: flex;
+}
+
+.head-decoration {
+    display: flex;
+    font-family: 'Bitter-SemiBold' sans-serif;
+    font-size: 16px;
+    color: #7f7f7f;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: #F9BC2F;
+}
+
+.date-decoration {
+    font-family: 'Bitter-Light' sans-serif;
+    font-size: 12px;
+    color: #7f7f7f;
+    padding-top: 5px;
+}
+
+.institute-decoration {
+    font-family: 'Bitter-Light' sans-serif;
+    font-size: 16px;
+    color: #7f7f7f;
+}
+
+.other-tool {
+    display: flex;
+    font-family: 'Bitter-Medium' sans-serif;
+    font-size: 14px;
+    color: #595959;
 }
