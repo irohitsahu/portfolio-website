@@ -1,16 +1,6 @@
 @font-face {
-    font-family: 'Bitter-Medium';
-    src: url(../font/Bitter-Medium.ttf);
-}
-
-@font-face {
     font-family: 'Bitter';
     src: url(../font/Bitter.ttf);
-}
-
-@font-face {
-    font-family: 'Bitter-SemiBold';
-    src: url(../font/Bitter-SemiBold.ttf);
 }
 
 @font-face {
@@ -34,7 +24,7 @@ body {
 .container {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 990px;
     margin: 50px;
     display: grid;
     grid-template-rows: 2fr 8fr;
@@ -49,14 +39,12 @@ body {
         'about about img';
     position: relative;
     background: #F9BC2F;
-    margin: 10px 10px 0px 10px;
     min-height: 150px;
 
 }
 
 .container .header-grid .name {
     grid-area: name;
-    position: relative;
     width: 200px;
     padding: 10px;
     font-family: 'Bitter-Medium', sans-serif;
@@ -136,8 +124,8 @@ body {
         'profile-body project-body project-body project-body project-body project-body'
         'skills-head skills-head education-head education-head education-head education-head'
         'skills-body skills-body education-body education-body education-body education-body'
-        'skills-body skills-body education-body education-body education-body education-body'
         'por-head por-head education-body education-body education-body education-body'
+        'por-body por-body education-body education-body education-body education-body'
         'por-body por-body education-body education-body education-body education-body'
         'por-body por-body intrests-head intrests-head intrests-head intrests-head'
         'por-body por-body intrests-body intrests-body intrests-body intrests-body';
@@ -147,7 +135,6 @@ body {
 
 .container .body-grid .profile-head {
     grid-area: profile-head;
-    position: relative;
     text-align: left;
     border-style: double double none none;
     border-color: #F9BC2F;
@@ -155,7 +142,6 @@ body {
 
 .container .body-grid .profile-body {
     grid-area: profile-body;
-    position: relative;
     text-align: left;
     border-style: none double double none;
     border-color: #F9BC2F;
@@ -163,7 +149,6 @@ body {
 
 .container .body-grid .project-head {
     grid-area: project-head;
-    position: relative;
     text-align: left;
     border-style: double none none none;
     border-color: #F9BC2F;
@@ -171,7 +156,6 @@ body {
 
 .container .body-grid .project-body {
     grid-area: project-body;
-    position: relative;
     text-align: left;
     border-style: none none double none;
     border-color: #F9BC2F;
@@ -179,13 +163,11 @@ body {
 
 .container .body-grid .skills-head {
     grid-area: skills-head;
-    position: relative;
     text-align: left;
 }
 
 .container .body-grid .skills-body {
     grid-area: skills-body;
-    position: relative;
     text-align: left;
     border-style: none none double none;
     border-color: #F9BC2F;
@@ -193,7 +175,6 @@ body {
 
 .container .body-grid .education-head {
     grid-area: education-head;
-    position: relative;
     text-align: left;
     border-style: none none none double;
     border-color: #F9BC2F;
@@ -201,7 +182,6 @@ body {
 
 .container .body-grid .education-body {
     grid-area: education-body;
-    position: relative;
     text-align: left;
     border-style: none none none double;
     border-color: #F9BC2F;
@@ -209,13 +189,11 @@ body {
 
 .container .body-grid .por-head {
     grid-area: por-head;
-    position: relative;
     text-align: left;
 }
 
 .container .body-grid .por-body {
     grid-area: por-body;
-    position: relative;
     text-align: left;
     border-style: none none double none;
     border-color: #F9BC2F;
@@ -223,7 +201,6 @@ body {
 
 .container .body-grid .intrests-head {
     grid-area: intrests-head;
-    position: relative;
     text-align: left;
     border-style: double none none double;
     border-color: #F9BC2F;
@@ -231,7 +208,6 @@ body {
 
 .container .body-grid .intrests-body {
     grid-area: intrests-body;
-    position: relative;
     text-align: left;
     border-style: none none double double;
     border-color: #F9BC2F;
@@ -239,7 +215,7 @@ body {
 
 .container .body-grid .body-heading {
     height: 20px;
-    font-family: 'Bitter-SemiBold', sans-serif;
+    font-family: 'Bitter-Medium', sans-serif;
     font-size: 20px;
     color: #404040;
     padding-left: 10px;
@@ -250,7 +226,7 @@ body {
     font-family: 'Bitter', sans-serif;
     font-size: 14px;
     color: #595959;
-    padding-left: 10px;
+    padding: 5px 10px 10px 10px;
 }
 
 img {
@@ -259,8 +235,9 @@ img {
 
 .head-decoration {
     display: flex;
-    font-family: 'Bitter-SemiBold' sans-serif;
-    font-size: 16px;
+    padding: 5px 0;
+    font-family: 'Bitter-Medium' sans-serif;
+    font-size: 17px;
     color: #7f7f7f;
     text-decoration-line: underline;
     text-decoration-style: double;
@@ -276,12 +253,11 @@ img {
 
 .institute-decoration {
     font-family: 'Bitter-Light' sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: #7f7f7f;
 }
 
-.other-tool {
-    display: flex;
+.other-tools {
     font-family: 'Bitter-Medium' sans-serif;
     font-size: 14px;
     color: #595959;
