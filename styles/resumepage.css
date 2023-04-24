@@ -122,13 +122,88 @@ body {
 
 .container .body-grid {
     display: grid;
-    grid-template-areas: 'profile-head project-head projects-head';
+    grid-template-areas: 'profile-head project-head project-head projects-head'
+        'profile-body project-body project-body project-body'
+        'skills-head skills-head education-head education-head'
+        'skills-body skills-body education-body education-body'
+        'skills-body skills-body education-body education-body'
+        'por-head por-head education-body education-body'
+        'por-body por-body education-body education-body'
+        'por-body por-body intrests-head intrests-head'
+        'por-body por-body intrests-body intrests-body';
     position: relative;
     margin: 10px 10px 0px 10px;
     min-height: 150px;
 }
 
-.container .body-grid .profile {
+.container .body-grid .profile-head {
     grid-area: profile-head;
     position: relative;
+    text-align: left;
+}
+
+.container .body-grid .profile-body {
+    grid-area: profile-body;
+    position: relative;
+    text-align: left;
+}
+
+.container .body-grid .project-head {
+    grid-area: project-head;
+    position: relative;
+    text-align: left;
+}
+
+.container .body-grid .project-body {
+    grid-area: project-body;
+    position: relative;
+    text-align: left;
+}
+
+.container .body-grid .skills-head {
+    grid-area: skills-head;
+    position: relative;
+    text-align: left;
+}
+
+.container .body-grid .skills-body {
+    grid-area: skills-body;
+    position: relative;
+    text-align: left;
+}
+
+.container .body-grid .education-head {
+    grid-area: education-head;
+    position: relative;
+    text-align: left;
+}
+
+.container .body-grid .education-body {
+    grid-area: education-body;
+    position: relative;
+    text-align: left;
+}
+
+.container .body-grid .por-head {
+    grid-area: por-head;
+    position: relative;
+    text-align: left;
+}
+
+.container .body-grid .por-body {
+    grid-area: por-body;
+    position: relative;
+    text-align: left;
+}
+
+.container .body-grid .intrests-head {
+    grid-area: intrests-head;
+    position: relative;
+    text-align: left;
+}
+
+.container .body-grid .intrests-body {
+    grid-area: intrests-body;
+    position: relative;
+    text-align: left;
 }
