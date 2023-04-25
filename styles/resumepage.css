@@ -1,3 +1,5 @@
+/* fonts import */
+
 @font-face {
     font-family: 'Bitter';
     src: url(../font/Bitter.ttf);
@@ -13,6 +15,9 @@
     src: url(../font/Bitter-Medium.ttf);
 }
 
+
+/* main elements */
+
 body {
     display: flex;
     flex-direction: row;
@@ -24,11 +29,15 @@ body {
 .container {
     position: relative;
     width: 100%;
-    max-width: 990px;
+    max-width: 1010px;
     margin: 50px;
     display: grid;
     grid-template-rows: 2fr 8fr;
 }
+
+
+/* resume header */
+
 
 .container .header-grid {
     display: grid;
@@ -40,6 +49,7 @@ body {
     position: relative;
     background: #F9BC2F;
     min-height: 150px;
+    margin: 0 10px 0;
 
 }
 
@@ -118,17 +128,20 @@ body {
     text-align: left;
 }
 
+/* resume body */
+
+
 .container .body-grid {
     display: grid;
-    grid-template-areas: 'profile-head project-head project-head projects-head projects-head projects-head'
-        'profile-body project-body project-body project-body project-body project-body'
-        'skills-head skills-head education-head education-head education-head education-head'
-        'skills-body skills-body education-body education-body education-body education-body'
-        'por-head por-head education-body education-body education-body education-body'
-        'por-body por-body education-body education-body education-body education-body'
-        'por-body por-body education-body education-body education-body education-body'
-        'por-body por-body intrests-head intrests-head intrests-head intrests-head'
-        'por-body por-body intrests-body intrests-body intrests-body intrests-body';
+    grid-template-areas: 'profile-head project-head project-head projects-head projects-head projects-head projects-head projects-head'
+        'profile-body project-body project-body project-body project-body project-body project-body project-body'
+        'skills-head skills-head skills-head education-head education-head education-head education-head education-head'
+        'skills-body skills-body skills-body education-body education-body education-body education-body education-body'
+        'por-head por-head por-head education-body education-body education-body education-body education-body'
+        'por-body por-body por-body education-body education-body education-body education-body education-body'
+        'por-body por-body por-body education-body education-body education-body education-body education-body'
+        'por-body por-body por-body intrests-head intrests-head intrests-head intrests-head intrests-head'
+        'por-body por-body por-body intrests-body intrests-body intrests-body intrests-body intrests-body';
     position: relative;
     margin: 10px;
 }
@@ -164,6 +177,7 @@ body {
 .container .body-grid .skills-head {
     grid-area: skills-head;
     text-align: left;
+    border-color: #F9BC2F;
 }
 
 .container .body-grid .skills-body {
@@ -190,6 +204,7 @@ body {
 .container .body-grid .por-head {
     grid-area: por-head;
     text-align: left;
+    border-color: #F9BC2F;
 }
 
 .container .body-grid .por-body {
@@ -229,15 +244,14 @@ body {
     padding: 5px 10px 10px 10px;
 }
 
-img {
-    display: flex;
-}
+/* decorations body */
 
 .head-decoration {
     display: flex;
     padding: 5px 0;
     font-family: 'Bitter-Medium' sans-serif;
     font-size: 17px;
+    font-weight: bold;
     color: #7f7f7f;
     text-decoration-line: underline;
     text-decoration-style: double;
@@ -246,9 +260,8 @@ img {
 
 .date-decoration {
     font-family: 'Bitter-Light' sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     color: #7f7f7f;
-    padding-top: 5px;
 }
 
 .institute-decoration {
@@ -261,4 +274,10 @@ img {
     font-family: 'Bitter-Medium' sans-serif;
     font-size: 14px;
     color: #595959;
+}
+
+.skills-info {
+    font-family: 'Bitter-Medium' sans-serif;
+    font-weight: bold;
+    font-size: 15px;
 }
