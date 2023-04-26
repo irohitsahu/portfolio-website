@@ -17,9 +17,7 @@ body {
 
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -37,17 +35,17 @@ nav ul li a {
 
 nav ul li a::after {
     content: '';
-    width: 0;
+    width: 100%;
     height: 3px;
     background: #F9BC2F;
     position: absolute;
     left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+    bottom: -10px;
+    transition: 0.3s;
 }
 
 nav ul li a:hover::after {
-    width: 100%;
+    width: 10%;
 }
 
 #header {
@@ -59,6 +57,53 @@ nav ul li a:hover::after {
     padding: 10px 10%;
 }
 
-.logo {
-    width: 140px;
+#main-logo {
+    display: flex;
+    font-family: 'Bitter-Black' sans-serif;
+    font-size: 32px;
+    border-style: solid;
+}
+
+#part-1 {
+    padding: 5px;
+    color: #fff;
+    background-color: #F9BC2F;
+    transition: 0.3s;
+}
+
+#part-2 {
+    padding: 5px;
+    color: #F9BC2F;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+#main-logo:hover #part-1 {
+    color: #F9BC2F;
+    background-color: #fff;
+}
+
+#main-logo:hover #part-2 {
+    color: #fff;
+    background-color: #F9BC2F;
+}
+
+.int-intro {
+    font-size: 30px;
+}
+
+.int-info span {
+    color: #595959;
+}
+
+.header-text p {
+    margin-top: 20%;
+    font-size: 30px;
+    color: #595959;
+}
+
+.header-text p span {
+    margin-top: 20%;
+    font-size: 30px;
+    color: #F9BC2F;
 }
