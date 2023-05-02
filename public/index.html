@@ -15,28 +15,44 @@
 
     <div id="header">
         <div class="container">
-            <nav>
-                <div id="main-logo">
-                    <div id="part-1">Rohit</div>
-                    <div id="part-2">Sahu</div>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="#about"> About</a></li>
-                        <li><a href="#project"> Projects</a></li>
-                        <li><a href="#contact"> Contact</a></li>
-                        <li><a href="./pages/resumePage.html"> Resume</a></li>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="int-info"><span>Aspiring</span> Web Developer</div>
-
+            <div id="navbar">
+                <nav>
+                    <div id="main-logo">
+                        <div id="part-1">Rohit</div>
+                        <div id="part-2">Sahu</div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#about"> About</a></li>
+                            <li><a href="#project"> Projects</a></li>
+                            <li><a href="#contact"> Contact</a></li>
+                            <li><a href="./pages/resumePage.html"> Resume</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="int-info"><span>Aspiring</span> Web Developer</div>
+            </div>
             <div class="header-text">
                 <p>Hi,<br>I'm <span>Rohit Sahu</span> from <span>India</span></p>
             </div>
         </div>
     </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 
     <!-- about -->
 
@@ -198,14 +214,6 @@
 
         }
     </script>
-
-    <!-- project -->
-
-    <div id="project">
-        <div class="container">
-            <div id="section-headings">Pro<span>jects</span></div>
-        </div>
-    </div>
 
     <!-- contact -->
 
