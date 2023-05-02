@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 0 10%;
 }
 
 #section-headings {
@@ -53,13 +53,13 @@ body {
 
 #about {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: #eee;
 }
 
 #contact {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: #ccc;
 }
 
@@ -73,6 +73,7 @@ nav {
 
 nav ul li {
     display: inline-block;
+    justify-content: space-between;
     margin: 10px 20px;
 }
 
@@ -104,13 +105,16 @@ li {
 
 .sticky {
     position: fixed;
-    top: 10px;
+    top: 0;
     left: 10%;
     right: 10%;
 }
 
 #navbar {
-    background-color: rgba(249, 188, 47, 0.1);
+    padding: 0 10px;
+    padding-top: 10px;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 /* logo animations */
@@ -208,7 +212,7 @@ li {
 /* resume */
 
 #resume {
-    margin-top: 5%;
+    margin-top: 0;
 }
 
 .tab {
@@ -231,7 +235,6 @@ li {
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    display: inline-flex;
     font-family: 'Bitter-Regular';
     font-size: 16px;
     justify-content: center;
@@ -242,7 +245,7 @@ li {
     padding: 5px;
     position: relative;
     text-decoration: none;
-    transition: all 250ms;
+    transition: 0.3s;
     vertical-align: baseline;
     width: auto;
 }
