@@ -30,9 +30,13 @@ body {
     background: #fff;
 }
 
+
+
+
 .container {
     padding: 0 10%;
 }
+
 
 #section-headings {
     padding: 10px;
@@ -43,6 +47,13 @@ body {
 
 #section-headings span {
     color: #F9BC2F;
+}
+
+#navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    padding-top: 1vh;
 }
 
 #header {
@@ -81,14 +92,14 @@ nav ul li {
     margin: 10px 20px;
 }
 
-nav ul li a {
+nav ul li .under-line-eff {
     color: #F9BC2F;
     text-decoration: none;
     font-size: 16px;
     position: relative;
 }
 
-nav ul li a::after {
+nav ul li .under-line-eff::after {
     content: '';
     width: 100%;
     height: 3px;
@@ -99,7 +110,7 @@ nav ul li a::after {
     transition: 0.3s;
 }
 
-nav ul li a:hover::after {
+nav ul li .under-line-eff:hover::after {
     width: 10%;
 }
 
@@ -109,16 +120,9 @@ li {
 
 .sticky {
     position: fixed;
-    top: 0;
-    left: 10%;
-    right: 10%;
+    padding-top: 1vh;
 }
 
-#navbar {
-    padding-top: 10px;
-    height: 10vh;
-    background-color: rgba(255, 255, 255, 1);
-}
 
 /* logo animations */
 
@@ -172,6 +176,7 @@ li {
     font-size: 32px;
     font-family: 'Bitter-Black', sans-serif;
     color: #595959;
+    padding-top: 50vh;
 }
 
 .header-text p span {
