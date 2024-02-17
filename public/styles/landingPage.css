@@ -1,23 +1,3 @@
-@font-face {
-  font-family: "Bitter-Black";
-  src: url(../font/Bitter-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: "Bitter-Regular";
-  src: url(../font/Bitter-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Bitter-Light";
-  src: url(../font/Bitter-Light.ttf);
-}
-
-@font-face {
-  font-family: "Bitter-Medium";
-  src: url(../font/Bitter-Medium.ttf);
-}
-
 #section-headings {
   padding: 10px;
   font-family: "Bitter-Black", sans-serif;
@@ -27,20 +7,6 @@
 
 #section-headings span {
   color: #f9bc2f;
-}
-
-#navbar {
-  width: 100%;
-  height: 10vh;
-  background-color: #fff;
-  padding-top: 1vh;
-}
-
-#header {
-  width: 100%;
-  height: 100vh;
-  background: #eee;
-  padding-top: 20vh;
 }
 
 #about {
@@ -57,87 +23,6 @@
   padding-top: 10vh;
 }
 
-/* home sections */
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Bitter-Black";
-}
-
-nav ul li {
-  display: inline-block;
-  justify-content: space-between;
-  margin: 10px 20px;
-}
-
-nav ul li .under-line-eff {
-  color: #f9bc2f;
-  text-decoration: none;
-  font-size: 16px;
-  position: relative;
-}
-
-nav ul li .under-line-eff::after {
-  content: "";
-  width: 100%;
-  height: 3px;
-  background: #f9bc2f;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.3s;
-}
-
-nav ul li .under-line-eff:hover::after {
-  width: 10%;
-}
-
-li {
-  list-style: none;
-}
-
-.sticky {
-  position: fixed;
-  padding-top: 1vh;
-}
-
-/* logo animations */
-
-#main-logo {
-  display: flex;
-  font-size: 32px;
-  border-style: solid;
-  border-color: #7f7f7f;
-  border-radius: 0.25rem;
-}
-
-#part-1 {
-  padding: 5px;
-  color: #fff;
-  background-color: #f9bc2f;
-  transition: 0.3s;
-}
-
-#part-2 {
-  padding: 5px;
-  color: #f9bc2f;
-  background-color: #fff;
-  transition: 0.5s;
-}
-
-#main-logo:hover #part-1 {
-  color: #f9bc2f;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-#main-logo:hover #part-2 {
-  color: #fff;
-  background-color: #f9bc2f;
-  cursor: pointer;
-}
-
 /* home infos */
 
 .int-info {
@@ -148,17 +33,6 @@ li {
 
 .int-info span {
   color: #595959;
-}
-
-.header-text {
-  font-size: 32px;
-  font-family: "Bitter-Black", sans-serif;
-  color: #595959;
-  padding-top: 50vh;
-}
-
-.header-text p span {
-  color: #f9bc2f;
 }
 
 /* about sections*/
@@ -194,21 +68,6 @@ li {
   box-shadow: 0 0 8px 0 rgba(249, 188, 47, 0.6);
   transition: 0.3s;
   width: 40%;
-}
-
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 30%;
-  }
 }
 
 /* resume */
