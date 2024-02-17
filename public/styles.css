@@ -1,48 +1,59 @@
 @font-face {
-    font-family: 'Bitter-Regular';
-    src: url(./font/Bitter-Regular.ttf);
+  font-family: "Bitter-Regular";
+  src: url("./assets/font/Bitter-VariableFont_wght.ttf");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #595959;
-    font-family: 'Bitter-Regular';
-    font-size: 32px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: "Bitter-Regular";
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
-    background: #fff;
+  background: #fc4a1a;
+  background: -webkit-linear-gradient(320deg, #f7b733, #fc4a1a);
+  background: linear-gradient(320deg, #f7b733, #fc4a1a);
+  font-size: 16px;
 }
 
-.container {
-    text-align: center;
+/* Devlopment Conatiner */
+
+.dev-container {
+  height: 100%;
 }
 
-.button {
-    align-items: center;
-    background-clip: padding-box;
-    background-color: #F9BC2F;
-    border-style: solid;
-    border-radius: .25rem;
-    border-color: #7f7f7f;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-family: 'Bitter-Regular';
-    font-size: 32px;
-    justify-content: center;
-    margin: 0;
-    padding: 5px;
-    position: relative;
-    transition: 0.3s;
-    vertical-align: baseline;
-    width: auto;
+.dev-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  border-radius: 100%;
+  font-size: 80px;
+  height: 150px;
+  width: 150px;
+  animation: rotate infinite forwards 5s ease-in-out;
 }
 
-.button:hover {
-    background-color: #eee;
-    color: #595959;
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(185deg);
+  }
 }
