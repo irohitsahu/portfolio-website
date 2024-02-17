@@ -1,262 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rohit Sahu Portfolio</title>
-    <link rel="stylesheet" href="../styles/landingPage.css">
-</head>
+    <link rel="stylesheet" href="../styles/landingPage.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-
+  <body>
     <script>
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        }
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
     </script>
 
-    <div class="scroll-container">
-        <!-- navbar -->
-        <div id="navbar">
-            <div class="container">
-                <nav>
+    <div class="container">
+      <!-- navbar -->
+      <nav>
+        <div class="main-logo">
+          <a
+            href="#header"
+            class="d-flex justify-content-center align-items-center"
+          >
+            <div class="part-1">Rohit</div>
+            <div class="part-2">Sahu</div>
+          </a>
+          <div class="int-info"><span>Aspiring</span> Web Developer</div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-3">
+          <div><a class="under-line-eff" href="#header"> Home</a></div>
+          <div><a class="under-line-eff" href="#about"> About</a></div>
+          <div><a class="under-line-eff" href="#contact"> Contact</a></div>
+          <div><a class="under-line-eff" href="#resume"> Resume</a></div>
+        </div>
+      </nav>
+      <!-- header -->
 
-                    <div id="main-logo">
-                        <a href="#header" style="text-decoration: none; display: flex;">
-                            <div id="part-1">Rohit</div>
-                            <div id="part-2">Sahu</div>
-                        </a>
+      <div id="header">
+        <div class="header-text">
+          <p class="anim-typewriter">
+            Hi,I'm <span>Rohit Sahu</span> from <span>India</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- about -->
+      <!-- <div class="container-area">
+        <div id="about">
+          <div class="container">
+            <div id="section-headings">About <span>Me</span></div>
+            <div class="about-me">
+              <div class="about about-1 card">
+                I'm passionate about Full Stack Web Development and have worked
+                on several technologies including
+                <div class="about about-1">
+                  <span>R</span>eact, <span>N</span>odeJs,
+                  <span>S</span>pringboot, <span>M</span>ongoDB,
+                  <span>M</span>ySQL, <span>G</span>it, <span>G</span>itHub,
+                  <span>G</span>oogle <span>F</span>irebase,<span>A</span>WS,
+                  <span>D</span>ocker
+                </div>
+              </div>
+
+              <div class="about about-2 card">
+                I am an Engineering Graduate in Mechanical and more recently,
+                I've achieved a PG Diploma degree in
+                <div>
+                  <span
+                    >Advanced Computing from CDAC, Electronic City,
+                    Bangalore</span
+                  >.
+                </div>
+                <div class="about about-2">
+                  As a highly motivated and detail-oriented web developer I have
+                  a strong foundation in <span>MERN</span> Stack Development,
+                  <span>Java</span>
+                  Programming,
+                  <span>Spring Boot</span>, and
+                  <span>SQL</span>
+                  Database Management. I am proficient in JavaScript, HTML, CSS,
+                  and various front-end frameworks, such as Bootstrap and
+                  Material UI. I possess excellent communication and
+                  problem-solving skills. I am committed to continuous learning
+                  and staying up-to-date with emerging technologies. I am
+                  passionate about leveraging my skills and creativity to
+                  contribute to the success of an innovative and dynamic team.
+                </div>
+              </div>
+            </div>
+
+            <div id="resume">
+              <div id="section-headings">My <span>Resume</span></div>
+              <div class="tab">
+                <button class="tab-links" onclick="openForm('skills')">
+                  Skills
+                </button>
+                <button class="tab-links" onclick="openForm('projects')">
+                  Projects
+                </button>
+                <button class="tab-links" onclick="openForm('education')">
+                  Education
+                </button>
+                <div>
+                  <a
+                    class="tab-links"
+                    href="../downloads/Rohit Sahu Resume.pdf"
+                    download
+                    >Download Resume</a
+                  >
+                </div>
+              </div>
+              <div class="tab-contents">
+                <div id="skills" style="padding: 2%">
+                  <div>
+                    <span>Intermediate: </span>
+                    <div class="skills-info">
+                      Java, JavaScript, C++, HTML, CSS, Node.js, React,Redux,
+                      MySQL,MongoDB, Git, Jira, Selenium
+                    </div>
+                  </div>
+
+                  <div>
+                    <span>Familiar: </span>
+                    <div class="skills-info">
+                      C#, ASP.Net MVC, Cloud AWS, DevOps, Jenkins, Entity
+                      Framework, Agile methodology, Docker, Kubernetes
+                    </div>
+                  </div>
+                </div>
+                <div id="projects" style="padding: 2%">
+                  <div class="head-decoration">Online Placement Agency</div>
+                  <div class="date-decoration">(Jan 2023 – March 2023)</div>
+
+                  <div class="about" style="padding: 5px 0px">
+                    <div>
+                      Lead a team of 4 people. This is a full-stack project
+                      built using MERN stack that enables job seekers to search
+                      for job listings and apply to them, and employers to post
+                      job openings and search for potential candidates.
                     </div>
                     <div>
-                        <ul>
-                            <li><a class="under-line-eff" href="#header"> Home</a></li>
-                            <li><a class="under-line-eff" href="#about"> About</a></li>
-                            <li><a class="under-line-eff" href="#contact"> Contact</a></li>
-                            <li><a class="under-line-eff" href="#resume"> Resume</a></li>
-                            </li>
-                        </ul>
+                      The portal utilizes MongoDB to store job listings and user
+                      data, Express.js for backend development, React for
+                      frontend development, and Node.js to enable server-side
+                      logic and routing.By building this portal, I gained
+                      valuable experience in web development using the MERN
+                      stack, as well as skills in database management,
+                      server-side programming, and frontend design.
                     </div>
-                </nav>
-                <div class="int-info"><span>Aspiring</span> Web Developer</div>
-            </div>
-        </div>
-        <!-- header -->
-
-        <div class="container-area">
-            <div id="header">
-                <div class="container">
-                    <div class="header-text">
-                        <p class="anim-typewriter">Hi,<br>I'm <span>Rohit Sahu</span> from <span>India</span></p>
-                    </div>
+                  </div>
+                  <br />
+                  <div class="head-decoration">
+                    Portfolio Website | Rohit Sahu
+                  </div>
+                  <div class="date-decoration">(Jan 2023 – Present)</div>
+                  <div class="about" style="padding: 5px 0px">
+                    This is a responsive website built using React MaterialUI
+                    component library. It showcases some of the projects that
+                    I've worked on and is hosted using Google Firebase Hosting.
+                  </div>
                 </div>
-            </div>
-        </div>
-
-        <script>
-            window.onscroll = function () { myFunction() };
-
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                    navbar.classList.remove("sticky");
-                }
-            }
-        </script>
-
-        <!-- about -->
-        <div class="container-area">
-            <div id="about">
-                <div class="container">
-                    <div id="section-headings">About <span>Me</span></div>
-                    <div class="about-me">
-                        <div class="about about-1 card">I'm passionate about Full Stack Web Development and have worked
-                            on
-                            several
-                            technologies including
-                            <div class="about about-1"><span>R</span>eact, <span>N</span>odeJs,
-                                <span>S</span>pringboot, <span>M</span>ongoDB, <span>M</span>ySQL,
-                                <span>G</span>it, <span>G</span>itHub, <span>G</span>oogle
-                                <span>F</span>irebase,<span>A</span>WS,
-                                <span>D</span>ocker
-                            </div>
-                        </div>
-
-                        <div class="about about-2 card">I am an Engineering Graduate in Mechanical and more recently,
-                            I've
-                            achieved a PG Diploma degree
-                            in <div><span>Advanced Computing from CDAC, Electronic City, Bangalore</span>.</div>
-                            <div class="about about-2">As a highly motivated and detail-oriented web developer
-                                I have a strong foundation in <span>MERN</span> Stack Development, <span>Java</span>
-                                Programming,
-                                <span>Spring Boot</span>, and
-                                <span>SQL</span>
-                                Database Management. I am proficient in JavaScript, HTML, CSS, and various front-end
-                                frameworks,
-                                such as Bootstrap and Material UI. I possess excellent communication and problem-solving
-                                skills.
-                                I am committed to continuous learning and staying up-to-date with emerging
-                                technologies. I am passionate about leveraging my skills and creativity to contribute to
-                                the
-                                success of an innovative and dynamic team.
-                            </div>
-                        </div>
+                <div id="education" style="padding: 2%">
+                  <br />
+                  <div class="head-decoration">
+                    Post Graduation Diploma in Advanced Computing | 72%
+                  </div>
+                  <div class="institute-decoration">
+                    Centre for Development of Advanced Computing, Bengaluru
+                  </div>
+                  <div class="about">
+                    During the PG-DAC course, I gained extensive knowledge in
+                    programming languages such as Java, C#, JavaScript, C++ and
+                    .NET Framework, including object-oriented programming,
+                    multi-threading, and database management using MySQL,
+                    MongoDB. I also learned web development concepts such as
+                    HTML, CSS, JavaScript,and React, Redux, ASP.Net MVC along
+                    with web security and REST services using the Spring
+                    framework.
+                  </div>
+                  <div style="display: flex">
+                    <div class="other-tools">Other Tools :</div>
+                    <div class="other-tools">
+                      Git, Jira, Docker, Kubernetes, Selenium
                     </div>
-
-                    <div id="resume">
-                        <div id="section-headings">My <span>Resume</span></div>
-                        <div class="tab">
-                            <button class="tab-links" onclick="openForm('skills')">Skills</button>
-                            <button class="tab-links" onclick="openForm('projects')">Projects</button>
-                            <button class="tab-links" onclick="openForm('education')">Education</button>
-                            <div>
-                                <a class="tab-links" href="../downloads/Rohit Sahu Resume.pdf" download>Download
-                                    Resume</a>
-                            </div>
-                        </div>
-                        <div class="tab-contents">
-                            <div id="skills" style="padding: 2%;">
-
-                                <div>
-                                    <span>Intermediate: </span>
-                                    <div class="skills-info"> Java, JavaScript, C++, HTML, CSS, Node.js, React,Redux,
-                                        MySQL,MongoDB,
-                                        Git,
-                                        Jira, Selenium</div>
-                                </div>
-
-                                <div><span>Familiar: </span>
-                                    <div class="skills-info"> C#, ASP.Net MVC, Cloud AWS, DevOps, Jenkins, Entity
-                                        Framework,
-                                        Agile
-                                        methodology, Docker,
-                                        Kubernetes </div>
-                                </div>
-                            </div>
-                            <div id="projects" style="padding: 2%">
-                                <div class="head-decoration">Online Placement Agency </div>
-                                <div class="date-decoration">(Jan 2023 – March 2023)</div>
-
-                                <div class="about" style="padding: 5px 0px;">
-                                    <div>Lead a team of 4 people. This is a full-stack project built using MERN stack
-                                        that
-                                        enables job
-                                        seekers to search for job listings and apply to them, and employers to post job
-                                        openings
-                                        and
-                                        search for potential candidates.
-                                    </div>
-                                    <div>The portal utilizes MongoDB to store job
-                                        listings and user data, Express.js for backend development, React for frontend
-                                        development, and
-                                        Node.js to enable server-side logic and routing.By building this portal, I
-                                        gained
-                                        valuable
-                                        experience in web development using the MERN stack, as well as skills in
-                                        database
-                                        management,
-                                        server-side programming, and frontend design.</div>
-                                </div>
-                                <br>
-                                <div class="head-decoration">Portfolio Website | Rohit Sahu </div>
-                                <div class="date-decoration">(Jan 2023 – Present)</div>
-                                <div class="about" style="padding: 5px 0px;">This is a responsive website built using
-                                    React
-                                    MaterialUI
-                                    component
-                                    library. It showcases some of the projects that I've worked on and is hosted using
-                                    Google
-                                    Firebase
-                                    Hosting.
-                                </div>
-                            </div>
-                            <div id="education" style="padding: 2%;">
-                                <br>
-                                <div class="head-decoration">Post Graduation Diploma in Advanced Computing | 72%</div>
-                                <div class="institute-decoration">Centre for Development of Advanced Computing,
-                                    Bengaluru
-                                </div>
-                                <div class="about">During the PG-DAC course, I gained extensive knowledge in
-                                    programming languages such as Java, C#, JavaScript, C++ and .NET Framework,
-                                    including
-                                    object-oriented programming, multi-threading, and database management using MySQL,
-                                    MongoDB.
-                                    I also
-                                    learned web development concepts such as HTML, CSS, JavaScript,and React, Redux,
-                                    ASP.Net
-                                    MVC
-                                    along
-                                    with web security and REST services using the Spring framework.
-                                </div>
-                                <div style="display: flex;">
-                                    <div class="other-tools">Other Tools : </div>
-                                    <div class="other-tools"> Git, Jira, Docker, Kubernetes, Selenium</div>
-                                </div>
-                                <div class="date-decoration" style="display: flex; justify-content: space-between;">
-                                    <div>2022 – 2023</div>
-                                    <div>Electronic City, Bangalore</div>
-                                </div>
-                                <br>
-                                <div class="head-decoration">Bachelor of Engineering in Mechanical | 66.81%</div>
-                                <div class="institute-decoration">Bhilai Institute of Technology, Durg</div>
-                                <div class="date-decoration" style="display: flex; justify-content: space-between;">
-                                    <div s>2015 - 2019</div>
-                                    <div>Durg, Chhattisgarh</div>
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
+                  <div
+                    class="date-decoration"
+                    style="display: flex; justify-content: space-between"
+                  >
+                    <div>2022 – 2023</div>
+                    <div>Electronic City, Bangalore</div>
+                  </div>
+                  <br />
+                  <div class="head-decoration">
+                    Bachelor of Engineering in Mechanical | 66.81%
+                  </div>
+                  <div class="institute-decoration">
+                    Bhilai Institute of Technology, Durg
+                  </div>
+                  <div
+                    class="date-decoration"
+                    style="display: flex; justify-content: space-between"
+                  >
+                    <div s>2015 - 2019</div>
+                    <div>Durg, Chhattisgarh</div>
+                  </div>
+                  <br />
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div> -->
 
-        <script>
-            function openForm(x) {
+      <!-- contact -->
 
-                if (x === 'skills') {
-                    if (document.getElementById(x).style.display === "block")
-                        document.getElementById(x).style.display = "none"
-                    else
-                        document.getElementById(x).style.display = "block"
-                    document.getElementById('education').style.display = "none"
-                    document.getElementById('projects').style.display = "none"
-                }
-                if (x === 'education') {
-                    if (document.getElementById(x).style.display === "block")
-                        document.getElementById(x).style.display = "none"
-                    else
-                        document.getElementById(x).style.display = "block"
-                    document.getElementById('skills').style.display = "none"
-                    document.getElementById('projects').style.display = "none"
-                }
-                if (x === 'projects') {
-                    if (document.getElementById(x).style.display === "block")
-                        document.getElementById(x).style.display = "none"
-                    else
-                        document.getElementById(x).style.display = "block"
-                    document.getElementById('skills').style.display = "none"
-                    document.getElementById('education').style.display = "none"
-                }
-
-            }
-        </script>
-
-        <!-- contact -->
-
-        <div class="container-area">
+      <!-- <div class="container-area">
             <div id="contact">
                 <div class="container">
-                    <div id="section-headings">Contact <span>Me</span></div>
+                    <div id="section-headings">Contact <span>Me</span></div> -->
 
-
-                    <!-- footer -->
-                    <div id="footer">
+      <!-- footer -->
+      <!-- <div id="footer">
                         <div class="footer-basic">
                             <footer>
                                 <div class="social"><a href="#">
@@ -271,14 +244,53 @@
                                         <p class="made-by">Designed by <span>Rohit Sahu</span></p>
                             </footer>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
+      <!-- </div>
             </div>
-        </div>
-
+        </div> -->
     </div>
 
+    <!-- <script>
+      window.onscroll = function () {
+        myFunction();
+      };
 
-</body>
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
 
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script> -->
+
+    <script>
+      function openForm(x) {
+        if (x === "skills") {
+          if (document.getElementById(x).style.display === "block")
+            document.getElementById(x).style.display = "none";
+          else document.getElementById(x).style.display = "block";
+          document.getElementById("education").style.display = "none";
+          document.getElementById("projects").style.display = "none";
+        }
+        if (x === "education") {
+          if (document.getElementById(x).style.display === "block")
+            document.getElementById(x).style.display = "none";
+          else document.getElementById(x).style.display = "block";
+          document.getElementById("skills").style.display = "none";
+          document.getElementById("projects").style.display = "none";
+        }
+        if (x === "projects") {
+          if (document.getElementById(x).style.display === "block")
+            document.getElementById(x).style.display = "none";
+          else document.getElementById(x).style.display = "block";
+          document.getElementById("skills").style.display = "none";
+          document.getElementById("education").style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>
