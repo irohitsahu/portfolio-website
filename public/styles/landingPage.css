@@ -9,67 +9,6 @@
   color: #f9bc2f;
 }
 
-#about {
-  width: 100%;
-  height: 150vh;
-  background: #fff;
-  padding-top: 10vh;
-}
-
-#contact {
-  width: 100%;
-  height: 50vh;
-  background: #eee;
-  padding-top: 10vh;
-}
-
-/* home infos */
-
-.int-info {
-  font-size: 16px;
-  color: #f9bc2f;
-  font-family: "Bitter-Black", sans-serif;
-}
-
-.int-info span {
-  color: #595959;
-}
-
-/* about sections*/
-
-.about {
-  padding: 10px 0;
-  font-size: 20px;
-  font-family: "Bitter-Regular", sans-serif;
-  text-align: left;
-}
-
-.about span {
-  color: #f9bc2f;
-  font-size: 20px;
-}
-
-.about-me {
-  display: flex;
-  justify-content: space-around;
-  flex: wrap;
-}
-
-.about-1 {
-  flex-basis: 20%;
-}
-
-.about-2 {
-  flex-basis: 75%;
-}
-
-.card {
-  padding: 15px;
-  box-shadow: 0 0 8px 0 rgba(249, 188, 47, 0.6);
-  transition: 0.3s;
-  width: 40%;
-}
-
 /* resume */
 
 #resume {
@@ -186,22 +125,4 @@
   font-family: "Bitter-Medium", sans-serif;
   font-weight: bold;
   font-size: 20px;
-}
-
-/* footer */
-
-#footer {
-  position: relative;
-  background: #eee;
-  height: 40vh;
-  width: 100%;
-  color: #fff;
-  font-family: "Bitter-Regular", sans-serif;
-  font-size: 20px;
-}
-
-.footer-basic {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
