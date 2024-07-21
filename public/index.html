@@ -1,24 +1,743 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit Sahu Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <script defer type="text/javascript" src="./scripts/pageLoad.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit Sahu</title>
+  <body>
+    <!-- header -->
+    <section id="welcome" data-panel="welcome">
+      <nav>
+        <div class="main-logo">
+          <a class="name-container" href="#header">
+            <div class="part-1">Rohit</div>
+            <div class="part-2">Sahu</div>
+          </a>
+          <div class="int-info">Web Developer</div>
+        </div>
+        <ul class="menu-items">
+          <li><a class="under-line-eff" href="#welcome">Welcome</a></li>
+          <li><a class="under-line-eff" href="#about">About</a></li>
+          <li><a class="under-line-eff" href="#resume">Resume</a></li>
+          <li><a class="under-line-eff" href="#contact">Contact</a></li>
+        </ul>
+        <div class="sidebar" onclick="openSidebar()">
+          <div class="sidebar-items">
+            <a href="#welcome" class="icon" data-panel="welcome">
+              <img src="./icon/home.svg" alt="home" />
+            </a>
+            <a href="#about" class="icon" data-panel="about">
+              <img src="./icon/about.svg" alt="about" />
+            </a>
+            <a href="#resume" class="icon" data-panel="resume">
+              <img src="./icon/home.svg" alt="home" />
+            </a>
+            <a href="#contact" class="icon" data-panel="contact">
+              <img src="./icon/contact.svg" alt="contact" />
+            </a>
+          </div>
+        </div>
+      </nav>
 
-    <link rel="stylesheet" href="styles.css">
-</head>
+      <img
+        onclick="openSidebar()"
+        class="menu-btn"
+        src="./icon/menu.svg"
+        alt=""
+      />
+      <div class="welcome-about-me">
+        <div class="welcome-about-me-text">
+          <span class="welcome-msg">
+            <span class="highlight-text">👋 Hey there!</span>
+            <br />
+            I&apos;m
+            <span class="highlight-text">Rohit Sahu</span>
+            <br />
+            A frontend developer with a knack for turning design visions into
+            interactive reality.
+            <br />
+            <span class="highlight-text">Welcome to my portfolio! 🚀✨</span>
+          </span>
+          <span class="blink-cursor">_</span>
+        </div>
+        <img
+          class="potrait-img"
+          src="./img/rohit-potrait.webp"
+          alt="rohit-potrait"
+        />
+        <div class="marquee-wrapper">
+          <div class="marquee">
+            <div>
+              <img src="./icon/react.svg" alt="react" />
+              <span>ReactJS</span>
+            </div>
+            <div>
+              <img src="./icon/nextjs.svg" alt="react" />
+              <span>NextJS</span>
+            </div>
+            <div>
+              <img src="./icon/javascript.svg" alt="react" />
+              <span>JavaScript</span>
+            </div>
+            <div>
+              <img src="./icon/typescript.svg" alt="react" />
+              <span>TypeScript</span>
+            </div>
+            <div>
+              <img src="./icon/html_5.svg" alt="react" />
+              <span>HTML</span>
+            </div>
+            <div>
+              <img src="./icon/css_3.svg" alt="react" />
+              <span>CSS</span>
+            </div>
+            <div>
+              <img src="./icon/sass.svg" alt="react" />
+              <span>SCSS/SASS/LESS</span>
+            </div>
+            <div>
+              <img src="./icon/react.svg" alt="react" />
+              <span>Context API</span>
+            </div>
+            <div>
+              <img src="./icon/redux.svg" alt="react" />
+              <span>Redux</span>
+            </div>
+            <div>
+              <img src="./icon/react-router.svg" alt="react" />
+              <span>React Router DOM</span>
+            </div>
+            <div>
+              <img src="./icon/nextjs.svg" alt="react" />
+              <span>Next.JS Router</span>
+            </div>
+            <div>
+              <img src="./icon/vite.svg" alt="react" />
+              <span>Vite</span>
+            </div>
+            <div>
+              <img src="./icon/git.svg" alt="react" />
+              <span>Git</span>
+            </div>
+            <div>
+              <img src="./icon/github.svg" alt="react" />
+              <span>Github</span>
+            </div>
+            <div>
+              <img src="./icon/bitbucket.svg" alt="react" />
+              <span>Bit Bucket</span>
+            </div>
+            <div>
+              <img src="./icon/jira.svg" alt="react" />
+              <span>Jira</span>
+            </div>
+            <div>
+              <img src="./icon/tailwind.svg" alt="react" />
+              <span>Tailwind</span>
+            </div>
+            <div>
+              <img src="./icon/styled.svg" alt="react" />
+              <span>Styled Components</span>
+            </div>
+            <div>
+              <img src="./icon/shadecn.svg" alt="react" />
+              <span>ShadeCN</span>
+            </div>
+            <div>
+              <img src="./icon/material_ui.svg" alt="react" />
+              <span>Material UI</span>
+            </div>
+            <div>
+              <img src="./icon/ant-design.svg" alt="react" />
+              <span>AntDesign</span>
+            </div>
+            <div>
+              <img src="./icon/bootstrap.svg" alt="react" />
+              <span>Bootstrap</span>
+            </div>
+          </div>
+          <div class="marquee">
+            <div>
+              <img src="./icon/react.svg" alt="react" />
+              <span>ReactJS</span>
+            </div>
+            <div>
+              <img src="./icon/nextjs.svg" alt="react" />
+              <span>NextJS</span>
+            </div>
+            <div>
+              <img src="./icon/javascript.svg" alt="react" />
+              <span>JavaScript</span>
+            </div>
+            <div>
+              <img src="./icon/typescript.svg" alt="react" />
+              <span>TypeScript</span>
+            </div>
+            <div>
+              <img src="./icon/html_5.svg" alt="react" />
+              <span>HTML</span>
+            </div>
+            <div>
+              <img src="./icon/css_3.svg" alt="react" />
+              <span>CSS</span>
+            </div>
+            <div>
+              <img src="./icon/sass.svg" alt="react" />
+              <span>SCSS/SASS/LESS</span>
+            </div>
+            <div>
+              <img src="./icon/react.svg" alt="react" />
+              <span>Context API</span>
+            </div>
+            <div>
+              <img src="./icon/redux.svg" alt="react" />
+              <span>Redux</span>
+            </div>
+            <div>
+              <img src="./icon/react-router.svg" alt="react" />
+              <span>React Router DOM</span>
+            </div>
+            <div>
+              <img src="./icon/nextjs.svg" alt="react" />
+              <span>Next.JS Router</span>
+            </div>
+            <div>
+              <img src="./icon/vite.svg" alt="react" />
+              <span>Vite</span>
+            </div>
+            <div>
+              <img src="./icon/git.svg" alt="react" />
+              <span>Git</span>
+            </div>
+            <div>
+              <img src="./icon/github.svg" alt="react" />
+              <span>Github</span>
+            </div>
+            <div>
+              <img src="./icon/bitbucket.svg" alt="react" />
+              <span>Bit Bucket</span>
+            </div>
+            <div>
+              <img src="./icon/jira.svg" alt="react" />
+              <span>Jira</span>
+            </div>
+            <div>
+              <img src="./icon/tailwind.svg" alt="react" />
+              <span>Tailwind</span>
+            </div>
+            <div>
+              <img src="./icon/styled.svg" alt="react" />
+              <span>Styled Components</span>
+            </div>
+            <div>
+              <img src="./icon/shadecn.svg" alt="react" />
+              <span>ShadeCN</span>
+            </div>
+            <div>
+              <img src="./icon/material_ui.svg" alt="react" />
+              <span>Material UI</span>
+            </div>
+            <div>
+              <img src="./icon/ant-design.svg" alt="react" />
+              <span>AntDesign</span>
+            </div>
+            <div>
+              <img src="./icon/bootstrap.svg" alt="react" />
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<body>
-    <div class="container">
-        <img src="./icon/development.png" alt="development" width="512px" height="512px">
-        <div> This site is still in developmemt phase. </div>
-        <br>
-        <br>
-        <div> If you want to continue <a href="./pages/landingPage.html"><button class="button">Click Here</button><img
-                    src="./icon/share.png" height="20px" width="20px" style="vertical-align: top;"></a></div>
-    </div>
-</body>
+    <!-- about -->
+    <section id="about" data-panel="about">
+      <div class="section-heading">
+        <div>About <span>Me</span></div>
+        <p>Think of me as the bridge between aesthetics and code.</p>
+      </div>
+      <div class="about-me-info">
+        <div class="about card">
+          I'm passionate about Full Stack Web Development and have worked on
+          several technologies including
+          <div class="about">
+            <span>R</span>eact, <span>N</span>odeJs, <span>S</span>pringboot,
+            <span>M</span>ongoDB, <span>M</span>ySQL, <span>G</span>it,
+            <span>G</span>itHub, <span>G</span>oogle
+            <span>F</span>irebase,<span>A</span>WS, <span>D</span>ocker
+          </div>
+        </div>
 
+        <div class="about card">
+          I am an Engineering Graduate in Mechanical and more recently, I've
+          achieved a PG Diploma degree in
+          <div>
+            <span>Advanced Computing from CDAC, Electronic City, Bangalore</span
+            >.
+          </div>
+          <div class="about">
+            As a highly motivated and detail-oriented web developer I have a
+            strong foundation in <span>MERN</span> Stack Development,
+            <span>Java</span>
+            Programming,
+            <span>Spring Boot</span>, and
+            <span>SQL</span>
+            Database Management. I am proficient in JavaScript, HTML, CSS, and
+            various front-end frameworks, such as Bootstrap and Material UI. I
+            possess excellent communication and problem-solving skills. I am
+            committed to continuous learning and staying up-to-date with
+            emerging technologies. I am passionate about leveraging my skills
+            and creativity to contribute to the success of an innovative and
+            dynamic team.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- resume -->
+    <section id="resume" data-panel="resume">
+      <div class="section-heading">
+        <div>My <span>Resume</span></div>
+        <p>
+          With a year of experience, I&apos;ve honed my skills in crafting
+          delightful interfaces and writing clean, efficient code.
+        </p>
+      </div>
+      <div class="resume-info">
+        <div class="tab-wrapper">
+          <button
+            type="button"
+            class="tab-links active"
+            onclick="openForm('skills', this)"
+          >
+            Skills
+          </button>
+          <button
+            type="button"
+            class="tab-links"
+            onclick="openForm('projects', this)"
+          >
+            Projects
+          </button>
+          <button
+            type="button"
+            class="tab-links"
+            onclick="openForm('education', this)"
+          >
+            Education
+          </button>
+          <button
+            type="button"
+            class="tab-links"
+            onclick="location.href='../downloads/rohit-sahu-resume.pdf';"
+            download
+          >
+            Download Resume
+          </button>
+        </div>
+        <div class="tab-contents">
+          <div id="skills" class="active">
+            <h1>Skills</h1>
+            <span>Intermediate: </span>
+            <div class="skills-info">
+              Java, JavaScript, C++, HTML, CSS, Node.js, React,Redux,
+              MySQL,MongoDB, Git, Jira, Selenium
+            </div>
+
+            <span>Familiar: </span>
+            <div class="skills-info">
+              C#, ASP.Net MVC, Cloud AWS, DevOps, Jenkins, Entity Framework,
+              Agile methodology, Docker, Kubernetes
+            </div>
+          </div>
+          <div id="projects">
+            <h1>Projects</h1>
+            <div class="project-head-decoration">Online Placement Agency</div>
+            <div class="project-date-decoration">(Jan 2023 – March 2023)</div>
+
+            <div class="about">
+              <div>
+                Lead a team of 4 people. This is a full-stack project built
+                using MERN stack that enables job seekers to search for job
+                listings and apply to them, and employers to post job openings
+                and search for potential candidates.
+              </div>
+              <div>
+                The portal utilizes MongoDB to store job listings and user data,
+                Express.js for backend development, React for frontend
+                development, and Node.js to enable server-side logic and
+                routing.By building this portal, I gained valuable experience in
+                web development using the MERN stack, as well as skills in
+                database management, server-side programming, and frontend
+                design.
+              </div>
+            </div>
+            <div class="project-head-decoration">
+              Portfolio Website | Rohit Sahu
+            </div>
+            <div class="project-date-decoration">(Jan 2023 – Present)</div>
+            <div class="about" style="padding: 5px 0px">
+              This is a responsive website built using React MaterialUI
+              component library. It showcases some of the projects that I've
+              worked on and is hosted using Google Firebase Hosting.
+            </div>
+          </div>
+          <div id="education">
+            <div class="project-head-decoration">
+              Post Graduation Diploma in Advanced Computing | 72%
+            </div>
+            <div class="institute-decoration">
+              Centre for Development of Advanced Computing, Bengaluru
+            </div>
+            <div class="about">
+              During the PG-DAC course, I gained extensive knowledge in
+              programming languages such as Java, C#, JavaScript, C++ and .NET
+              Framework, including object-oriented programming, multi-threading,
+              and database management using MySQL, MongoDB. I also learned web
+              development concepts such as HTML, CSS, JavaScript,and React,
+              Redux, ASP.Net MVC along with web security and REST services using
+              the Spring framework.
+            </div>
+            <div class="tools-wrapper">
+              <div class="other-tools">Other Tools :</div>
+              <div class="other-tools">
+                Git, Jira, Docker, Kubernetes, Selenium
+              </div>
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div>2022 – 2023</div>
+              <div>Electronic City, Bangalore</div>
+            </div>
+            <div class="head-decoration">
+              Bachelor of Engineering in Mechanical | 66.81%
+            </div>
+            <div class="institute-decoration">
+              Bhilai Institute of Technology, Durg
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div s>2015 - 2019</div>
+              <div>Durg, Chhattisgarh</div>
+            </div>
+            <div class="project-head-decoration">
+              Post Graduation Diploma in Advanced Computing | 72%
+            </div>
+            <div class="institute-decoration">
+              Centre for Development of Advanced Computing, Bengaluru
+            </div>
+            <div class="about">
+              During the PG-DAC course, I gained extensive knowledge in
+              programming languages such as Java, C#, JavaScript, C++ and .NET
+              Framework, including object-oriented programming, multi-threading,
+              and database management using MySQL, MongoDB. I also learned web
+              development concepts such as HTML, CSS, JavaScript,and React,
+              Redux, ASP.Net MVC along with web security and REST services using
+              the Spring framework.
+            </div>
+            <div class="tools-wrapper">
+              <div class="other-tools">Other Tools :</div>
+              <div class="other-tools">
+                Git, Jira, Docker, Kubernetes, Selenium
+              </div>
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div>2022 – 2023</div>
+              <div>Electronic City, Bangalore</div>
+            </div>
+            <div class="head-decoration">
+              Bachelor of Engineering in Mechanical | 66.81%
+            </div>
+            <div class="institute-decoration">
+              Bhilai Institute of Technology, Durg
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div s>2015 - 2019</div>
+              <div>Durg, Chhattisgarh</div>
+            </div>
+            <div class="project-head-decoration">
+              Post Graduation Diploma in Advanced Computing | 72%
+            </div>
+            <div class="institute-decoration">
+              Centre for Development of Advanced Computing, Bengaluru
+            </div>
+            <div class="about">
+              During the PG-DAC course, I gained extensive knowledge in
+              programming languages such as Java, C#, JavaScript, C++ and .NET
+              Framework, including object-oriented programming, multi-threading,
+              and database management using MySQL, MongoDB. I also learned web
+              development concepts such as HTML, CSS, JavaScript,and React,
+              Redux, ASP.Net MVC along with web security and REST services using
+              the Spring framework.
+            </div>
+            <div class="tools-wrapper">
+              <div class="other-tools">Other Tools :</div>
+              <div class="other-tools">
+                Git, Jira, Docker, Kubernetes, Selenium
+              </div>
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div>2022 – 2023</div>
+              <div>Electronic City, Bangalore</div>
+            </div>
+            <div class="head-decoration">
+              Bachelor of Engineering in Mechanical | 66.81%
+            </div>
+            <div class="institute-decoration">
+              Bhilai Institute of Technology, Durg
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div s>2015 - 2019</div>
+              <div>Durg, Chhattisgarh</div>
+            </div>
+            <div class="project-head-decoration">
+              Post Graduation Diploma in Advanced Computing | 72%
+            </div>
+            <div class="institute-decoration">
+              Centre for Development of Advanced Computing, Bengaluru
+            </div>
+            <div class="about">
+              During the PG-DAC course, I gained extensive knowledge in
+              programming languages such as Java, C#, JavaScript, C++ and .NET
+              Framework, including object-oriented programming, multi-threading,
+              and database management using MySQL, MongoDB. I also learned web
+              development concepts such as HTML, CSS, JavaScript,and React,
+              Redux, ASP.Net MVC along with web security and REST services using
+              the Spring framework.
+            </div>
+            <div class="tools-wrapper">
+              <div class="other-tools">Other Tools :</div>
+              <div class="other-tools">
+                Git, Jira, Docker, Kubernetes, Selenium
+              </div>
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div>2022 – 2023</div>
+              <div>Electronic City, Bangalore</div>
+            </div>
+            <div class="head-decoration">
+              Bachelor of Engineering in Mechanical | 66.81%
+            </div>
+            <div class="institute-decoration">
+              Bhilai Institute of Technology, Durg
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div s>2015 - 2019</div>
+              <div>Durg, Chhattisgarh</div>
+            </div>
+            <div class="project-head-decoration">
+              Post Graduation Diploma in Advanced Computing | 72%
+            </div>
+            <div class="institute-decoration">
+              Centre for Development of Advanced Computing, Bengaluru
+            </div>
+            <div class="about">
+              During the PG-DAC course, I gained extensive knowledge in
+              programming languages such as Java, C#, JavaScript, C++ and .NET
+              Framework, including object-oriented programming, multi-threading,
+              and database management using MySQL, MongoDB. I also learned web
+              development concepts such as HTML, CSS, JavaScript,and React,
+              Redux, ASP.Net MVC along with web security and REST services using
+              the Spring framework.
+            </div>
+            <div class="tools-wrapper">
+              <div class="other-tools">Other Tools :</div>
+              <div class="other-tools">
+                Git, Jira, Docker, Kubernetes, Selenium
+              </div>
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div>2022 – 2023</div>
+              <div>Electronic City, Bangalore</div>
+            </div>
+            <div class="head-decoration">
+              Bachelor of Engineering in Mechanical | 66.81%
+            </div>
+            <div class="institute-decoration">
+              Bhilai Institute of Technology, Durg
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div s>2015 - 2019</div>
+              <div>Durg, Chhattisgarh</div>
+            </div>
+            <div class="project-head-decoration">
+              Post Graduation Diploma in Advanced Computing | 72%
+            </div>
+            <div class="institute-decoration">
+              Centre for Development of Advanced Computing, Bengaluru
+            </div>
+            <div class="about">
+              During the PG-DAC course, I gained extensive knowledge in
+              programming languages such as Java, C#, JavaScript, C++ and .NET
+              Framework, including object-oriented programming, multi-threading,
+              and database management using MySQL, MongoDB. I also learned web
+              development concepts such as HTML, CSS, JavaScript,and React,
+              Redux, ASP.Net MVC along with web security and REST services using
+              the Spring framework.
+            </div>
+            <div class="tools-wrapper">
+              <div class="other-tools">Other Tools :</div>
+              <div class="other-tools">
+                Git, Jira, Docker, Kubernetes, Selenium
+              </div>
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div>2022 – 2023</div>
+              <div>Electronic City, Bangalore</div>
+            </div>
+            <div class="head-decoration">
+              Bachelor of Engineering in Mechanical | 66.81%
+            </div>
+            <div class="institute-decoration">
+              Bhilai Institute of Technology, Durg
+            </div>
+            <div
+              class="date-decoration"
+              style="display: flex; justify-content: space-between"
+            >
+              <div s>2015 - 2019</div>
+              <div>Durg, Chhattisgarh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+
+    <section id="contact" data-panel="contact">
+      <div class="section-heading">
+        <div>Contact <span>Me</span></div>
+        <p>
+          Whether I&apos;m translating wireframes or fine-tuning CSS, my goal
+          remains the same: to create seamless user experiences.
+        </p>
+      </div>
+      <!-- contact -->
+      <div class="contact-info">
+        <div class="social-wrapper">
+          <a
+            href="https://www.linkedin.com/in/irohitsahu/"
+            class="icon"
+            data-panel="welcome"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="./icon/linkedIn.svg" alt="linkedIn" />
+          </a>
+          <a
+            href="https://github.com/irohitsahu/"
+            class="icon"
+            data-panel="welcome"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="./icon/github.svg" alt="github" />
+          </a>
+          <a
+            href="https://wa.me/+919399652548"
+            class="icon"
+            data-panel="welcome"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="./icon/whatsapp.svg" alt="whatsapp" />
+          </a>
+        </div>
+
+        <a href="tel:+919399652548">+91-9399652548</a>
+        <a href="mailto:irohitsahu97@gmail.com">irohitsahu97@gmail.com</a>
+
+        <!-- footer -->
+        <footer>
+          <p class="copyright">© 2023 Rohit Sahu. All rights reserved.</p>
+          <p class="made-by">Designed by <span>Rohit Sahu</span></p>
+        </footer>
+      </div>
+    </section>
+    <script src="./scripts/panelsnap.js" defer></script>
+
+    <!-- <script>
+      var menu, menuItems, panelSnapInstance;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        menu = document.querySelector(".sidebar-items");
+        menuItems = menu.querySelectorAll("button");
+
+        panelSnapInstance = new PanelSnap({
+          container: document.body,
+          panelSelector: "> section",
+          directionThreshold: 100,
+          delay: 100,
+          duration: 300,
+        });
+        panelSnapInstance.on("activatePanel", activateMenuItem);
+
+        menuItems.forEach(function (menuItem) {
+          menuItem.addEventListener("click", onButtonClick);
+        });
+      });
+
+      function activateMenuItem(panel) {
+        menuItems.forEach(function (menuItem) {
+          menuItem.classList.remove("active");
+        });
+
+        var panelName = panel.getAttribute("data-panel");
+        var menuItem = menu.querySelector(
+          'button[data-panel="' + panelName + '"]'
+        );
+        menuItem.classList.add("active");
+      }
+
+      function onButtonClick(e) {
+        var panelName = e.target.getAttribute("data-panel");
+        var panel = document.querySelector( 
+          'section[data-panel="' + panelName + '"]'
+        );
+        panelSnapInstance.snapToPanel(panel);
+      }
+    </script> -->
+  </body>
 </html>

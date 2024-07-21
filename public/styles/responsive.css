@@ -1,0 +1,43 @@
+@media (min-width: 640px) {
+  .welcome-about-me-text {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .welcome-about-me,
+  .about-me-info,
+  .resume-info,
+  .contact-info {
+    padding: 0 6rem;
+  }
+  .section-heading {
+    padding: 0 6rem;
+  }
+  nav {
+    padding: 0 6rem;
+  }
+  .menu-btn {
+    right: 6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .welcome-about-me,
+  .resume-info,
+  .contact-info {
+    justify-content: space-evenly;
+  }
+
+  .about-me-info {
+    flex-direction: row;
+  }
+  .menu-items {
+    display: flex;
+  }
+  .menu-btn {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+}
