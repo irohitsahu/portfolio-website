@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
     <script defer type="text/javascript" src="./scripts/pageLoad.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
   <body>
@@ -696,48 +691,5 @@
         </footer>
       </div>
     </section>
-    <script src="./scripts/panelsnap.js" defer></script>
-
-    <!-- <script>
-      var menu, menuItems, panelSnapInstance;
-
-      document.addEventListener("DOMContentLoaded", function () {
-        menu = document.querySelector(".sidebar-items");
-        menuItems = menu.querySelectorAll("button");
-
-        panelSnapInstance = new PanelSnap({
-          container: document.body,
-          panelSelector: "> section",
-          directionThreshold: 100,
-          delay: 100,
-          duration: 300,
-        });
-        panelSnapInstance.on("activatePanel", activateMenuItem);
-
-        menuItems.forEach(function (menuItem) {
-          menuItem.addEventListener("click", onButtonClick);
-        });
-      });
-
-      function activateMenuItem(panel) {
-        menuItems.forEach(function (menuItem) {
-          menuItem.classList.remove("active");
-        });
-
-        var panelName = panel.getAttribute("data-panel");
-        var menuItem = menu.querySelector(
-          'button[data-panel="' + panelName + '"]'
-        );
-        menuItem.classList.add("active");
-      }
-
-      function onButtonClick(e) {
-        var panelName = e.target.getAttribute("data-panel");
-        var panel = document.querySelector( 
-          'section[data-panel="' + panelName + '"]'
-        );
-        panelSnapInstance.snapToPanel(panel);
-      }
-    </script> -->
   </body>
 </html>
