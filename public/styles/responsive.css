@@ -13,6 +13,10 @@
   .section-heading {
     padding: 0 6rem;
   }
+  .section-heading p {
+    width: 60%;
+    font-size: 12px;
+  }
   nav {
     padding: 0 6rem;
   }

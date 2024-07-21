@@ -260,7 +260,6 @@ nav ul li .under-line-eff:hover::after {
 /* about sections*/
 
 .section-heading {
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,6 +278,7 @@ nav ul li .under-line-eff:hover::after {
 }
 
 .section-heading p {
+  width: 90%;
   font-size: 12px;
 }
 
