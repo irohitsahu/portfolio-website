@@ -308,6 +308,7 @@ nav ul li .under-line-eff:hover::after {
   padding: 0.2rem 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
   color: #fff;
+  cursor: pointer;
 }
 
 .tab-links:hover,

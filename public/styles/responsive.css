@@ -44,4 +44,20 @@
 @media (min-width: 1280px) {
 }
 @media (min-width: 1536px) {
+  .welcome-about-me,
+  .about-me-info,
+  .resume-info,
+  .contact-info {
+    padding: 0 20rem;
+  }
+  .section-heading {
+    padding: 0 20rem;
+  }
+  .section-heading p {
+    width: 40%;
+    font-size: 14px;
+  }
+  nav {
+    padding: 0 20rem;
+  }
 }
