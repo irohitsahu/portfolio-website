@@ -6,9 +6,15 @@
 @media (min-width: 768px) {
   .welcome-about-me,
   .about-me-info,
-  .resume-info,
-  .contact-info {
-    padding: 0 6rem;
+  .contact-info,
+  .project-info {
+    padding: 2rem 6rem;
+  }
+  .welcome-about-me::after,
+  .about-me-info::after,
+  .contact-info::after,
+  .project-info::after {
+    content: "";
   }
   .section-heading {
     padding: 0 6rem;
@@ -26,14 +32,25 @@
 }
 @media (min-width: 1024px) {
   .welcome-about-me,
-  .resume-info,
+  .about-me-info-wrapper,
   .contact-info {
-    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: start;
   }
 
-  .about-me-info {
-    flex-direction: row;
+  .project-info-wrapper {
+    flex-direction: column;
+    align-items: start;
   }
+
+  .about-bio {
+    width: 50%;
+  }
+
+  .about-skills {
+    width: 50%;
+  }
+
   .menu-items {
     display: flex;
   }
@@ -46,10 +63,24 @@
 @media (min-width: 1536px) {
   .welcome-about-me,
   .about-me-info,
-  .resume-info,
-  .contact-info {
-    padding: 0 20rem;
+  .contact-info,
+  .project-info {
+    padding: 6rem 20rem;
   }
+  .welcome-about-me::before,
+  .about-me-info::before,
+  .contact-info::before,
+  .project-info::before {
+    filter: blur(0);
+  }
+
+  .welcome-about-me::after,
+  .about-me-info::after,
+  .contact-info::after,
+  .project-info::after {
+    filter: blur(0);
+  }
+
   .section-heading {
     padding: 0 20rem;
   }
@@ -59,5 +90,8 @@
   }
   nav {
     padding: 0 20rem;
+  }
+  .menu-items {
+    right: 20rem;
   }
 }

@@ -7,12 +7,13 @@
     <title>Rohit Sahu Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script defer type="text/javascript" src="./scripts/pageLoad.js"></script>
   </head>
 
   <body>
     <!-- header -->
-    <section id="welcome" data-panel="welcome">
+    <section id="welcome">
       <nav>
         <div class="main-logo">
           <a class="name-container" href="#header">
@@ -23,22 +24,22 @@
         </div>
         <ul class="menu-items">
           <li><a class="under-line-eff" href="#welcome">Welcome</a></li>
+          <li><a class="under-line-eff" href="#project">Projects</a></li>
           <li><a class="under-line-eff" href="#about">About</a></li>
-          <li><a class="under-line-eff" href="#resume">Resume</a></li>
           <li><a class="under-line-eff" href="#contact">Contact</a></li>
         </ul>
         <div class="sidebar" onclick="openSidebar()">
           <div class="sidebar-items">
-            <a href="#welcome" class="icon" data-panel="welcome">
+            <a href="#welcome" class="icon">
               <img src="./icon/home.svg" alt="home" />
             </a>
-            <a href="#about" class="icon" data-panel="about">
+            <a href="#about" class="icon">
               <img src="./icon/about.svg" alt="about" />
             </a>
-            <a href="#resume" class="icon" data-panel="resume">
+            <a href="#resume" class="icon">
               <img src="./icon/home.svg" alt="home" />
             </a>
-            <a href="#contact" class="icon" data-panel="contact">
+            <a href="#contact" class="icon">
               <img src="./icon/contact.svg" alt="contact" />
             </a>
           </div>
@@ -51,7 +52,7 @@
         src="./icon/menu.svg"
         alt=""
       />
-      <div class="welcome-about-me">
+      <div class="welcome-about-me" data-aos="zoom-in">
         <div class="welcome-about-me-text">
           <span class="welcome-msg">
             <span class="highlight-text">👋 Hey there!</span>
@@ -59,8 +60,8 @@
             I&apos;m
             <span class="highlight-text">Rohit Sahu</span>
             <br />
-            A frontend developer with a knack for turning design visions into
-            interactive reality.
+            A front-end developer with expertise in transforming design visions
+            into interactive experiences.
             <br />
             <span class="highlight-text">Welcome to my portfolio! 🚀✨</span>
           </span>
@@ -166,27 +167,102 @@
       </div>
     </section>
 
-    <!-- about -->
-    <section id="about" data-panel="about">
+    <!-- project -->
+    <section id="project">
       <div class="section-heading">
-        <div>About <span>Me</span></div>
+        <div>Project <span>By Me</span></div>
         <p>Think of me as the bridge between aesthetics and code.</p>
       </div>
-      <div class="about-me-info">
-        <div class="about card">
-          I am a motivated aspiring front-end web developer with over one year
-          of experience in UI/UX development.
-        </div>
+      <div class="project-info" data-aos="zoom-in">
+        <h1>Projects</h1>
 
-        <div class="about card">
-          I am an Engineering Graduate in Mechanical and more recently, I've
-          achieved a PG Diploma degree in
-          <div>
-            <span>Advanced Computing from CDAC, Electronic City, Bangalore</span
-            >.
+        <div class="project-info-wrapper">
+          <!-- Project List -->
+          <div class="project-card">
+            <div class="project-head-decoration">Portfolio Website V1</div>
+            <div class="project-date-decoration">(Jan 2022)</div>
+            <div class="project-tech-stack">
+              Tech Stack - HTML, CSS, JavaScript
+            </div>
+
+            <div class="project-about">
+              Developed the initial version of my personal portfolio website to
+              showcase my skills and projects.
+            </div>
           </div>
-          <div class="about">
-            As a highly motivated and detail-oriented web developer I have a
+          <div class="project-card">
+            <div class="project-head-decoration">Portfolio Website V2</div>
+            <div class="project-date-decoration">(June 2024)</div>
+            <div class="project-tech-stack">
+              Tech Stack - Vite, ReactJS, Styled Components, Tailwind
+            </div>
+
+            <div class="project-about">
+              Improved upon the first version with enhanced design, user
+              experience, and additional features to better represent my
+              capabilities.
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-head-decoration">OpenAI Image Generator</div>
+            <div class="project-date-decoration">(June 2024)</div>
+            <div class="project-tech-stack">
+              Tech Stack – Vite, ReactJS, TypeScript, Tailwind, RapidAPI -
+              OpenAI-DALL-E3
+            </div>
+
+            <div class="project-about">
+              Created an image generator leveraging OpenAI's API to produce
+              custom images based on user inputs.
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-head-decoration">Hire Path</div>
+            <div class="project-date-decoration">(June 2023)</div>
+            <div class="project-tech-stack">
+              Tech Stack - Vite, ReactJS, MaterialUI, React-Router-Dom, Context
+              API, Redux
+            </div>
+
+            <div class="project-about">
+              Developed a platform to streamline the hiring process, including
+              features for job postings, applications, and candidate tracking.
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-head-decoration">Phonebook</div>
+            <div class="project-date-decoration">(June 2023)</div>
+            <div class="project-tech-stack">
+              Tech Stack - Vite, NextJS, ShadeCN, Context API
+            </div>
+
+            <div class="project-about">
+              Built a comprehensive phonebook application with features for
+              adding, editing, and managing contact information efficiently.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+      <div class="section-heading">
+        <div>My <span>Resume</span></div>
+        <p>
+          With a year of experience, I&apos;ve honed my skills in crafting
+          delightful interfaces and writing clean, efficient code.
+        </p>
+      </div>
+      <div class="about-me-info" data-aos="zoom-in">
+        <h1>About Me</h1>
+        <div class="about-me-info-wrapper">
+          <div class="about-bio">
+            I am a motivated aspiring front-end web developer with over one year
+            of experience in UI/UX development. I am an Engineering Graduate in
+            Mechanical and more recently, I've achieved a PG Diploma degree in
+            <span>Advanced Computing from CDAC, Electronic City, Bangalore</span
+            >. As a highly motivated and detail-oriented web developer I have a
             strong foundation in <span>MERN</span> Stack Development,
             <span>Java</span>
             Programming,
@@ -200,118 +276,73 @@
             and creativity to contribute to the success of an innovative and
             dynamic team.
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- resume -->
-    <section id="resume" data-panel="resume">
-      <div class="section-heading">
-        <div>My <span>Resume</span></div>
-        <p>
-          With a year of experience, I&apos;ve honed my skills in crafting
-          delightful interfaces and writing clean, efficient code.
-        </p>
-      </div>
-      <div class="resume-info">
-        <div class="tab-wrapper">
-          <button
-            type="button"
-            class="tab-links active"
-            onclick="openForm('skills', this)"
-          >
-            Skills
-          </button>
-          <button
-            type="button"
-            class="tab-links"
-            onclick="openForm('projects', this)"
-          >
-            Projects
-          </button>
-          <button
-            type="button"
-            class="tab-links"
-            onclick="openForm('education', this)"
-          >
-            Education
-          </button>
-          <button
-            type="button"
-            class="tab-links"
-            onclick="location.href='./downloads/rohit-sahu-resume.pdf';"
-            download
-          >
-            Download Resume
-          </button>
-        </div>
-        <div class="tab-contents">
-          <div id="skills" class="active">
-            <h1>Skills</h1>
-            <span>Intermediate: </span>
-            <div class="skills-info">
-              Java, JavaScript, C++, HTML, CSS, Node.js, React,Redux,
-              MySQL,MongoDB, Git, Jira, Selenium
+          <div class="about-skills">
+            <div class="tab-wrapper">
+              <button
+                type="button"
+                class="tab-links active"
+                onclick="openForm('skills', this)"
+              >
+                Skills
+              </button>
+              <button
+                type="button"
+                class="tab-links"
+                onclick="openForm('education', this)"
+              >
+                Education
+              </button>
+              <button
+                type="button"
+                class="tab-links"
+                onclick="location.href='./downloads/rohit-sahu-resume.pdf';"
+                download
+              >
+                Download Resume
+              </button>
             </div>
-
-            <span>Familiar: </span>
-            <div class="skills-info">
-              C#, ASP.Net MVC, Cloud AWS, DevOps, Jenkins, Entity Framework,
-              Agile methodology, Docker, Kubernetes
-            </div>
-          </div>
-          <div id="projects">
-            <h1>Projects</h1>
-            <div class="project-head-decoration">Online Placement Agency</div>
-            <div class="project-date-decoration">(Jan 2023 – March 2023)</div>
-
-            <div class="about">
-              <div>
-                Lead a team of 4 people. This is a full-stack project built
-                using MERN stack that enables job seekers to search for job
-                listings and apply to them, and employers to post job openings
-                and search for potential candidates.
+            <div class="tab-contents">
+              <div id="skills" class="active">
+                <h1>Skills</h1>
+                <div class="skills-info">
+                  <p>• Libraries and Frameworks • ReactJS • NextJS</p>
+                  <p>
+                    • Languages • JavaScript • TypeScript • HTML • CSS •
+                    SCSS/SASS/LESS
+                  </p>
+                  <p>• State Management • Context API • Redux</p>
+                  <p>• Routing • React Router Dom • Next.js Router</p>
+                  <p>• Build Tools • Vite</p>
+                  <p>• Version Control • Git • Bit Bucket</p>
+                  <p>• Task Management • Jira</p>
+                  <p>
+                    • Styling Frameworks • Tailwind • Styled Components •
+                    ShadeCN • MaterialUI • AntDesign • Bootstrap
+                  </p>
+                </div>
               </div>
-              <div>
-                The portal utilizes MongoDB to store job listings and user data,
-                Express.js for backend development, React for frontend
-                development, and Node.js to enable server-side logic and
-                routing.By building this portal, I gained valuable experience in
-                web development using the MERN stack, as well as skills in
-                database management, server-side programming, and frontend
-                design.
-              </div>
-            </div>
-            <div class="project-head-decoration">
-              Portfolio Website | Rohit Sahu
-            </div>
-            <div class="project-date-decoration">(Jan 2023 – Present)</div>
-            <div class="about" style="padding: 5px 0px">
-              This is a responsive website built using React MaterialUI
-              component library. It showcases some of the projects that I've
-              worked on and is hosted using Google Firebase Hosting.
-            </div>
-          </div>
-          <div id="education">
-            <div class="project-head-decoration">
-              Post Graduation Diploma in Advanced Computing | 72%
-            </div>
-            <div class="institute-decoration">
-              Centre for Development of Advanced Computing, Bengaluru
-            </div>
-            <div class="about">
-              During the PG-DAC course, I gained extensive knowledge in
-              programming languages such as Java, C#, JavaScript, C++ and .NET
-              Framework, including object-oriented programming, multi-threading,
-              and database management using MySQL, MongoDB. I also learned web
-              development concepts such as HTML, CSS, JavaScript,and React,
-              Redux, ASP.Net MVC along with web security and REST services using
-              the Spring framework.
-            </div>
-            <div class="tools-wrapper">
-              <div class="other-tools">Other Tools :</div>
-              <div class="other-tools">
-                Git, Jira, Docker, Kubernetes, Selenium
+              <div id="education">
+                <div class="project-head-decoration">
+                  Post Graduation Diploma in Advanced Computing | 72%
+                </div>
+                <div class="institute-decoration">
+                  Centre for Development of Advanced Computing, Bengaluru
+                </div>
+                <div class="about">
+                  During the PG-DAC course, I gained extensive knowledge in
+                  programming languages such as Java, C#, JavaScript, C++ and
+                  .NET Framework, including object-oriented programming,
+                  multi-threading, and database management using MySQL, MongoDB.
+                  I also learned web development concepts such as HTML, CSS,
+                  JavaScript,and React, Redux, ASP.Net MVC along with web
+                  security and REST services using the Spring framework.
+                </div>
+                <div class="tools-wrapper">
+                  <div class="other-tools">Other Tools :</div>
+                  <div class="other-tools">
+                    Git, Jira, Docker, Kubernetes, Selenium
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -320,7 +351,7 @@
     </section>
     <!-- contact -->
 
-    <section id="contact" data-panel="contact">
+    <section id="contact">
       <div class="section-heading">
         <div>Contact <span>Me</span></div>
         <p>
@@ -329,7 +360,7 @@
         </p>
       </div>
       <!-- contact -->
-      <div class="contact-info">
+      <div class="contact-info" data-aos="zoom-in">
         <div class="social-wrapper">
           <a
             href="https://www.linkedin.com/in/irohitsahu/"
@@ -370,5 +401,9 @@
         </footer>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: false, mirror: true });
+    </script>
   </body>
 </html>

@@ -94,7 +94,7 @@ nav {
 
 #welcome,
 #about,
-#resume,
+#project,
 #contact {
   scroll-snap-align: start;
   height: 100dvh;
@@ -213,14 +213,9 @@ nav ul li .under-line-eff:hover::after {
 
 .welcome-about-me,
 .about-me-info,
-.resume-info,
-.contact-info {
+.contact-info,
+.project-info {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 1rem;
   background: #eee;
   height: calc(100dvh - 6rem);
   overflow-y: auto;
@@ -228,12 +223,53 @@ nav ul li .under-line-eff:hover::after {
   transition: min-height 100ms ease-in-out;
 }
 
+.welcome-about-me::before,
+.about-me-info::before,
+.contact-info::before,
+.project-info::before {
+  content: "";
+  height: 100%;
+  width: 230px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../img/bg1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: blur(5px);
+}
+
+.welcome-about-me::after,
+.about-me-info::after,
+.contact-info::after,
+.project-info::after {
+  height: 100%;
+  width: 230px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/bg2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: blur(5px);
+}
+
+.welcome-about-me-wrapper,
+.about-me-info-wrapper,
+.contact-info-wrapper,
+.project-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
 .welcome-about-me-text {
   font-size: 1rem;
   color: #595959;
-}
-
-.welcome-msg {
 }
 
 .highlight-text {
@@ -255,6 +291,9 @@ nav ul li .under-line-eff:hover::after {
   display: none;
   justify-content: center;
   align-items: center;
+}
+
+.project-card {
 }
 
 /* about sections*/
@@ -282,6 +321,21 @@ nav ul li .under-line-eff:hover::after {
   font-size: 12px;
 }
 
+.about-bio {
+  background-color: #f9bc2f;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
 .about span {
   color: #f9bc2f;
   font-size: 20px;
@@ -290,7 +344,6 @@ nav ul li .under-line-eff:hover::after {
 .card {
   padding: 15px;
   box-shadow: 0 0 8px 0 rgba(249, 188, 47, 0.6);
-  transition: 0.3s;
 }
 
 .tab-wrapper {
@@ -327,8 +380,7 @@ nav ul li .under-line-eff:hover::after {
 }
 
 #skills,
-#education,
-#projects {
+#education {
   padding: 0.5rem;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
   border: 1px solid #f9bc2f;
@@ -336,8 +388,7 @@ nav ul li .under-line-eff:hover::after {
 }
 
 #skills,
-#education,
-#projects {
+#education {
   opacity: 0;
   display: none;
 }
