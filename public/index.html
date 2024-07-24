@@ -22,12 +22,12 @@
           </a>
           <div class="int-info">Frontend Developer</div>
         </div>
-        <ul class="menu-items">
-          <li><a class="under-line-eff" href="#welcome">Welcome</a></li>
-          <li><a class="under-line-eff" href="#project">Projects</a></li>
-          <li><a class="under-line-eff" href="#about">About</a></li>
-          <li><a class="under-line-eff" href="#contact">Contact</a></li>
-        </ul>
+        <div class="menu-items">
+          <a class="under-line-eff" href="#welcome">Welcome</a>
+          <a class="under-line-eff" href="#project">Projects</a>
+          <a class="under-line-eff" href="#about">About</a>
+          <a class="under-line-eff" href="#contact">Contact</a>
+        </div>
         <div class="sidebar" onclick="openSidebar()">
           <div class="sidebar-items">
             <a href="#welcome" class="icon">
@@ -54,17 +54,7 @@
       />
       <div class="welcome-about-me" data-aos="zoom-in">
         <div class="welcome-about-me-text">
-          <span class="welcome-msg">
-            <span class="highlight-text">👋 Hey there!</span>
-            <br />
-            I&apos;m
-            <span class="highlight-text">Rohit Sahu</span>
-            <br />
-            A front-end developer with expertise in transforming design visions
-            into interactive experiences.
-            <br />
-            <span class="highlight-text">Welcome to my portfolio! 🚀✨</span>
-          </span>
+          <span class="welcome-msg"> </span>
           <span class="blink-cursor">_</span>
         </div>
         <!-- <img
@@ -163,6 +153,96 @@
               <span>Bootstrap</span>
             </div>
           </div>
+          <div class="marquee">
+            <div>
+              <img src="./icon/react.svg" alt="react" />
+              <span>ReactJS</span>
+            </div>
+            <div>
+              <img src="./icon/nextjs.svg" alt="nextjs" />
+              <span>NextJS</span>
+            </div>
+            <div>
+              <img src="./icon/javascript.svg" alt="javascript" />
+              <span>JavaScript</span>
+            </div>
+            <div>
+              <img src="./icon/typescript.svg" alt="typescript" />
+              <span>TypeScript</span>
+            </div>
+            <div>
+              <img src="./icon/html_5.svg" alt="html_5" />
+              <span>HTML</span>
+            </div>
+            <div>
+              <img src="./icon/css_3.svg" alt="css_3" />
+              <span>CSS</span>
+            </div>
+            <div>
+              <img src="./icon/sass.svg" alt="sass" />
+              <span>SCSS/SASS/LESS</span>
+            </div>
+            <div>
+              <img src="./icon/react.svg" alt="context" />
+              <span>Context API</span>
+            </div>
+            <div>
+              <img src="./icon/redux.svg" alt="redux" />
+              <span>Redux</span>
+            </div>
+            <div>
+              <img src="./icon/react-router.svg" alt="react-router" />
+              <span>React Router DOM</span>
+            </div>
+            <div>
+              <img src="./icon/nextjs.svg" alt="nextjs-router" />
+              <span>Next.JS Router</span>
+            </div>
+            <div>
+              <img src="./icon/vite.svg" alt="vite" />
+              <span>Vite</span>
+            </div>
+            <div>
+              <img src="./icon/git.svg" alt="git" />
+              <span>Git</span>
+            </div>
+            <div>
+              <img src="./icon/github.svg" alt="github" />
+              <span>Github</span>
+            </div>
+            <div>
+              <img src="./icon/bitbucket.svg" alt="bitbucket" />
+              <span>Bit Bucket</span>
+            </div>
+            <div>
+              <img src="./icon/jira.svg" alt="jira" />
+              <span>Jira</span>
+            </div>
+            <div>
+              <img src="./icon/tailwind.svg" alt="tailwind" />
+              <span>Tailwind</span>
+            </div>
+            <div>
+              <img src="./icon/styled.svg" alt="styled" />
+              <span>Styled Components</span>
+            </div>
+            <div>
+              <img src="./icon/shadecn.svg" alt="shadecn" />
+              <span>ShadeCN</span>
+            </div>
+            <div>
+              <img src="./icon/material_ui.svg" alt="material_ui" />
+              <span>Material UI</span>
+            </div>
+            <div>
+              <img src="./icon/ant-design.svg" alt="ant-design" />
+              <span>AntDesign</span>
+            </div>
+            <div>
+              <img src="./icon/bootstrap.svg" alt="bootstrap" />
+              <span>Bootstrap</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -170,16 +250,26 @@
     <!-- project -->
     <section id="project">
       <div class="section-heading">
-        <div>Project <span>By Me</span></div>
+        <div>Project's<span>By Me</span></div>
         <p>Think of me as the bridge between aesthetics and code.</p>
       </div>
       <div class="project-info" data-aos="zoom-in">
-        <h1>Projects</h1>
+        <h1 class="section-subheading">Projects</h1>
 
         <div class="project-info-wrapper">
           <!-- Project List -->
-          <div class="project-card">
-            <div class="project-head-decoration">Portfolio Website V1</div>
+          <div class="project-card" data-aos="fade-down" data-aos-delay="100">
+            <div class="project-head-wrapper">
+              <div class="project-head-decoration">Portfolio Website V1</div>
+              <span class="project-link">
+                <a href="http://" title="Github">
+                  <img class="icn-size" src="icon/github.svg" alt="repo" />
+                </a>
+                <a href="http://" title="Live Link">
+                  <img class="icn-size" src="icon/live.svg" alt="live" />
+                </a>
+              </span>
+            </div>
             <div class="project-date-decoration">(Jan 2022)</div>
             <div class="project-tech-stack">
               Tech Stack - HTML, CSS, JavaScript
@@ -190,8 +280,18 @@
               showcase my skills and projects.
             </div>
           </div>
-          <div class="project-card">
-            <div class="project-head-decoration">Portfolio Website V2</div>
+          <div class="project-card" data-aos="fade-down" data-aos-delay="200">
+            <div class="project-head-wrapper">
+              <div class="project-head-decoration">Portfolio Website V2</div>
+              <span class="project-link">
+                <a href="http://" title="Github">
+                  <img class="icn-size" src="icon/github.svg" alt="repo" />
+                </a>
+                <a href="http://" title="Live Link">
+                  <img class="icn-size" src="icon/live.svg" alt="live" />
+                </a>
+              </span>
+            </div>
             <div class="project-date-decoration">(June 2024)</div>
             <div class="project-tech-stack">
               Tech Stack - Vite, ReactJS, Styled Components, Tailwind
@@ -203,8 +303,18 @@
               capabilities.
             </div>
           </div>
-          <div class="project-card">
-            <div class="project-head-decoration">OpenAI Image Generator</div>
+          <div class="project-card" data-aos="fade-down" data-aos-delay="300">
+            <div class="project-head-wrapper">
+              <div class="project-head-decoration">OpenAI Image Generator</div>
+              <span class="project-link">
+                <a href="http://" title="Github">
+                  <img class="icn-size" src="icon/github.svg" alt="repo" />
+                </a>
+                <a href="http://" title="Live Link">
+                  <img class="icn-size" src="icon/live.svg" alt="live" />
+                </a>
+              </span>
+            </div>
             <div class="project-date-decoration">(June 2024)</div>
             <div class="project-tech-stack">
               Tech Stack – Vite, ReactJS, TypeScript, Tailwind, RapidAPI -
@@ -216,8 +326,18 @@
               custom images based on user inputs.
             </div>
           </div>
-          <div class="project-card">
-            <div class="project-head-decoration">Hire Path</div>
+          <div class="project-card" data-aos="fade-down" data-aos-delay="400">
+            <div class="project-head-wrapper">
+              <div class="project-head-decoration">Hire Path</div>
+              <span class="project-link">
+                <a href="http://" title="Github">
+                  <img class="icn-size" src="icon/github.svg" alt="repo" />
+                </a>
+                <a href="http://" title="Live Link">
+                  <img class="icn-size" src="icon/live.svg" alt="live" />
+                </a>
+              </span>
+            </div>
             <div class="project-date-decoration">(June 2023)</div>
             <div class="project-tech-stack">
               Tech Stack - Vite, ReactJS, MaterialUI, React-Router-Dom, Context
@@ -229,8 +349,18 @@
               features for job postings, applications, and candidate tracking.
             </div>
           </div>
-          <div class="project-card">
-            <div class="project-head-decoration">Phonebook</div>
+          <div class="project-card" data-aos="fade-down" data-aos-delay="500">
+            <div class="project-head-wrapper">
+              <div class="project-head-decoration">Phonebook</div>
+              <span class="project-link">
+                <a href="http://" title="Github">
+                  <img class="icn-size" src="icon/github.svg" alt="repo" />
+                </a>
+                <a href="http://" title="Live Link">
+                  <img class="icn-size" src="icon/live.svg" alt="live" />
+                </a>
+              </span>
+            </div>
             <div class="project-date-decoration">(June 2023)</div>
             <div class="project-tech-stack">
               Tech Stack - Vite, NextJS, ShadeCN, Context API
@@ -255,27 +385,23 @@
         </p>
       </div>
       <div class="about-me-info" data-aos="zoom-in">
-        <h1>About Me</h1>
+        <h1 class="section-subheading">About Me</h1>
         <div class="about-me-info-wrapper">
-          <div class="about-bio">
+          <!-- <div class="about-bio">
             I am a motivated aspiring front-end web developer with over one year
             of experience in UI/UX development. I am an Engineering Graduate in
             Mechanical and more recently, I've achieved a PG Diploma degree in
-            <span>Advanced Computing from CDAC, Electronic City, Bangalore</span
-            >. As a highly motivated and detail-oriented web developer I have a
-            strong foundation in <span>MERN</span> Stack Development,
-            <span>Java</span>
-            Programming,
-            <span>Spring Boot</span>, and
-            <span>SQL</span>
-            Database Management. I am proficient in JavaScript, HTML, CSS, and
-            various front-end frameworks, such as Bootstrap and Material UI. I
-            possess excellent communication and problem-solving skills. I am
-            committed to continuous learning and staying up-to-date with
-            emerging technologies. I am passionate about leveraging my skills
-            and creativity to contribute to the success of an innovative and
-            dynamic team.
-          </div>
+            Advanced Computing from CDAC, Electronic City, Bangalore. As a
+            highly motivated and detail-oriented web developer I have a strong
+            foundation in MERN Stack Development,Java Programming,Spring Boot,
+            andSQL Database Management. I am proficient in JavaScript, HTML,
+            CSS, and various front-end frameworks, such as Bootstrap and
+            Material UI. I possess excellent communication and problem-solving
+            skills. I am committed to continuous learning and staying up-to-date
+            with emerging technologies. I am passionate about leveraging my
+            skills and creativity to contribute to the success of an innovative
+            and dynamic team.
+          </div> -->
           <div class="about-skills">
             <div class="tab-wrapper">
               <button
@@ -303,44 +429,43 @@
             </div>
             <div class="tab-contents">
               <div id="skills" class="active">
-                <h1>Skills</h1>
+                <h1 class="section-subheading">Technical Skills</h1>
                 <div class="skills-info">
-                  <p>• Libraries and Frameworks • ReactJS • NextJS</p>
+                  <p>Libraries and Frameworks <span>ReactJS | NextJS</span></p>
                   <p>
-                    • Languages • JavaScript • TypeScript • HTML • CSS •
-                    SCSS/SASS/LESS
+                    Languages
+                    <span
+                      >JavaScript | TypeScript | HTML | CSS |
+                      SCSS/SASS/LESS</span
+                    >
                   </p>
-                  <p>• State Management • Context API • Redux</p>
-                  <p>• Routing • React Router Dom • Next.js Router</p>
-                  <p>• Build Tools • Vite</p>
-                  <p>• Version Control • Git • Bit Bucket</p>
-                  <p>• Task Management • Jira</p>
+                  <p>State Management <span>Context API | Redux</span></p>
+                  <p>Routing <span>React Router Dom | Next.js Router</span></p>
+                  <p>Build Tools <span>Vite</span></p>
+                  <p>Version Control <span>Git | Bit Bucket</span></p>
+                  <p>Task Management <span>Jira</span></p>
                   <p>
-                    • Styling Frameworks • Tailwind • Styled Components •
-                    ShadeCN • MaterialUI • AntDesign • Bootstrap
+                    Styling Frameworks
+                    <span
+                      >Tailwind | Styled Components | ShadeCN | MaterialUI |
+                      AntDesign | Bootstrap</span
+                    >
                   </p>
                 </div>
               </div>
               <div id="education">
-                <div class="project-head-decoration">
-                  Post Graduation Diploma in Advanced Computing | 72%
-                </div>
-                <div class="institute-decoration">
-                  Centre for Development of Advanced Computing, Bengaluru
-                </div>
-                <div class="about">
-                  During the PG-DAC course, I gained extensive knowledge in
-                  programming languages such as Java, C#, JavaScript, C++ and
-                  .NET Framework, including object-oriented programming,
-                  multi-threading, and database management using MySQL, MongoDB.
-                  I also learned web development concepts such as HTML, CSS,
-                  JavaScript,and React, Redux, ASP.Net MVC along with web
-                  security and REST services using the Spring framework.
-                </div>
-                <div class="tools-wrapper">
-                  <div class="other-tools">Other Tools :</div>
-                  <div class="other-tools">
-                    Git, Jira, Docker, Kubernetes, Selenium
+                <h1 class="section-subheading">Education</h1>
+                <div class="skills-info">
+                  <div class="institute-decoration">
+                    <div>AUGUST 2022 – MARCH 2023</div>
+                    Post Graduation Diploma in Advance Computing | Centre for
+                    Development of Advanced Computing | Electronic City,
+                    Bangalore | 72%
+                  </div>
+                  <div class="institute-decoration">
+                    <div>AUGUST 2015 – MAY 2019</div>
+                    B.Tech in Mechanical Engineering | Bhilai Institute of
+                    Technology | Durg, Chhattisgarh | 66%
                   </div>
                 </div>
               </div>
@@ -361,38 +486,62 @@
       </div>
       <!-- contact -->
       <div class="contact-info" data-aos="zoom-in">
-        <div class="social-wrapper">
-          <a
-            href="https://www.linkedin.com/in/irohitsahu/"
-            class="icon"
-            data-panel="welcome"
-            target="_blank"
-            rel="noopener"
-          >
-            <img src="./icon/linkedIn.svg" alt="linkedIn" />
-          </a>
-          <a
-            href="https://github.com/irohitsahu/"
-            class="icon"
-            data-panel="welcome"
-            target="_blank"
-            rel="noopener"
-          >
-            <img src="./icon/github.svg" alt="github" />
-          </a>
-          <a
-            href="https://wa.me/+919399652548"
-            class="icon"
-            data-panel="welcome"
-            target="_blank"
-            rel="noopener"
-          >
-            <img src="./icon/whatsapp.svg" alt="whatsapp" />
-          </a>
-        </div>
+        <h1 class="section-subheading">Contact Me</h1>
+        <div class="contact-info-wrapper">
+          <div class="contact-info-item">
+            <div class="social-wrapper">
+              <a
+                href="https://www.linkedin.com/in/irohitsahu/"
+                class="icon"
+                data-panel="welcome"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="./icon/linkedIn.svg" alt="linkedIn" />
+              </a>
+              <a
+                href="https://github.com/irohitsahu/"
+                class="icon"
+                data-panel="welcome"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="./icon/github.svg" alt="github" />
+              </a>
+              <a
+                href="https://wa.me/+919399652548"
+                class="icon"
+                data-panel="welcome"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="./icon/whatsapp.svg" alt="whatsapp" />
+              </a>
+            </div>
 
-        <a href="tel:+919399652548">+91-9399652548</a>
-        <a href="mailto:irohitsahu97@gmail.com">irohitsahu97@gmail.com</a>
+            <a href="tel:+919399652548">+91-9399652548</a>
+            <a href="mailto:irohitsahu97@gmail.com">irohitsahu97@gmail.com</a>
+          </div>
+          <form onsubmit="" class="contact-me-form">
+            <div class="input-wrapper">
+              <label>Name</label>
+              <input class="input" type="text" placeholder="Enter Your Name" />
+            </div>
+            <div class="input-wrapper">
+              <label>Mobile Number</label>
+              <input
+                class="input"
+                type="text"
+                placeholder="Enter Your Mobile Number"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label>Email</label>
+              <input class="input" type="text" placeholder="Enter Your Email" />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
 
         <!-- footer -->
         <footer>

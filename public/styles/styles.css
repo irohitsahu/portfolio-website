@@ -155,29 +155,38 @@ nav {
   font-size: 12px;
 }
 
-nav ul li {
-  margin: 10px 20px;
-  font-size: 16px;
-  list-style: none;
+.menu-items {
+  position: fixed;
+  right: 6rem;
+  top: 2rem;
+  z-index: 1;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-nav ul li .under-line-eff {
+.under-line-eff {
+  padding: 0.5em 1rem;
   color: #f9bc2f;
   position: relative;
 }
 
-nav ul li .under-line-eff::after {
+.under-line-eff::after {
   content: "";
   width: 100%;
   height: 3px;
   background: #f9bc2f;
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -5px;
+  transform: rotate(-2deg);
   transition: 0.3s;
 }
 
-nav ul li .under-line-eff:hover::after {
+.under-line-eff:hover::after {
+  transform: rotate(-45deg);
   width: 10%;
 }
 
@@ -193,6 +202,10 @@ nav ul li .under-line-eff:hover::after {
 }
 
 /* home infos */
+
+.welcome-msg {
+  font-size: 1.5rem;
+}
 
 .blink-cursor {
   display: inline-block;
@@ -238,6 +251,7 @@ nav ul li .under-line-eff:hover::after {
   background-repeat: no-repeat;
   background-size: contain;
   filter: blur(5px);
+  z-index: -1;
 }
 
 .welcome-about-me::after,
@@ -254,6 +268,7 @@ nav ul li .under-line-eff:hover::after {
   background-repeat: no-repeat;
   background-size: contain;
   filter: blur(5px);
+  z-index: -1;
 }
 
 .welcome-about-me-wrapper,
@@ -263,7 +278,6 @@ nav ul li .under-line-eff:hover::after {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
   gap: 1rem;
 }
 
@@ -274,26 +288,13 @@ nav ul li .under-line-eff:hover::after {
 
 .highlight-text {
   color: #f9bc2f;
+  font-weight: 700;
 }
 
 .potrait-img {
   height: 200px;
   border-radius: 1rem;
   box-shadow: 10px 10px 10px #0002;
-}
-
-.menu-items {
-  position: fixed;
-  right: 6rem;
-  top: 2rem;
-  z-index: 1;
-  cursor: pointer;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-card {
 }
 
 /* about sections*/
@@ -319,6 +320,10 @@ nav ul li .under-line-eff:hover::after {
 .section-heading p {
   width: 90%;
   font-size: 12px;
+}
+
+.section-subheading {
+  margin: 1rem 0;
 }
 
 .about-bio {
@@ -358,7 +363,7 @@ nav ul li .under-line-eff:hover::after {
   width: 140px;
   background-color: #f9bc2f;
   border-radius: 0.3rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
   color: #fff;
   cursor: pointer;
@@ -366,7 +371,7 @@ nav ul li .under-line-eff:hover::after {
 
 .tab-links:hover,
 .tab-links.active {
-  background-color: #eee;
+  background-color: #fff;
   color: #595959;
 }
 
@@ -376,7 +381,6 @@ nav ul li .under-line-eff:hover::after {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-color: #eee;
 }
 
 #skills,
@@ -385,6 +389,8 @@ nav ul li .under-line-eff:hover::after {
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
   border: 1px solid #f9bc2f;
   border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 1rem;
 }
 
 #skills,
@@ -400,24 +406,68 @@ nav ul li .under-line-eff:hover::after {
   opacity: 1;
 }
 
-.project-head-decoration {
-  padding: 5px 0;
-  font-family: "Bitter-Medium", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #7f7f7f;
-  text-decoration-line: underline;
-  text-decoration-style: double;
-  text-decoration-color: #f9bc2f;
+.skills-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skills-info p {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-info span {
+  font-weight: 600;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.icn-size {
+  width: 20px;
+  height: 20px;
+}
+
+.project-head-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .project-head-decoration {
-  font-family: "Bitter-Light", sans-serif;
-  font-size: 16px;
-  color: #7f7f7f;
+  font-size: 20px;
+  color: #f9bc2f;
+}
+
+.project-date-decoration {
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.project-tech-stack {
+  font-style: italic;
 }
 
 .institute-decoration {
+  font-weight: 600;
+  color: #7f7f7f;
+}
+
+.institute-decoration div {
+  font-weight: 300;
+  font-style: italic;
   color: #7f7f7f;
 }
 
@@ -440,6 +490,33 @@ nav ul li .under-line-eff:hover::after {
   gap: 1rem;
 }
 
+.contact-info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.input {
+  padding: 0.2rem 0.8rem;
+}
+
 footer {
   background-color: white;
   padding: 1rem 0;
@@ -455,12 +532,17 @@ footer {
 }
 
 .marquee-wrapper {
-  max-width: 100%;
-  position: relative;
+  max-width: 99%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   display: flex;
   justify-content: start;
   align-items: center;
+  transform: translate(-50%, -50%) rotate(2deg);
   overflow: hidden;
+  margin: 2rem 0;
+  padding: 5rem 0;
 }
 .marquee-wrapper::before {
   content: "";
