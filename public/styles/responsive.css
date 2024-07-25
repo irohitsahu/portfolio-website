@@ -33,17 +33,26 @@
 @media (min-width: 1024px) {
   .welcome-about-me,
   .about-me-info-wrapper,
-  .contact-info {
+  .contact-info-wrapper {
     flex-direction: row;
     align-items: start;
   }
 
   .about-bio {
-    width: 50%;
+    width: 40%;
   }
 
   .about-skills {
-    width: 50%;
+    width: 60%;
+  }
+
+  .contact-me-form {
+    width: 40%;
+  }
+
+  .contact-info-item {
+    width: 60%;
+    margin-top: auto;
   }
 
   .menu-items {

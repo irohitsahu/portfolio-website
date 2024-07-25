@@ -36,7 +36,7 @@
             <a href="#about" class="icon">
               <img src="./icon/about.svg" alt="about" />
             </a>
-            <a href="#resume" class="icon">
+            <a href="#project" class="icon">
               <img src="./icon/home.svg" alt="home" />
             </a>
             <a href="#contact" class="icon">
@@ -53,9 +53,20 @@
         alt=""
       />
       <div class="welcome-about-me" data-aos="zoom-in">
-        <div class="welcome-about-me-text">
-          <span class="welcome-msg"> </span>
-          <span class="blink-cursor">_</span>
+        <img
+          src="./img/bg-lines.webp"
+          alt="bg-gradient-lines"
+          class="bg-gradient-lines"
+        />
+        <div class="welcome-text-wrapper">
+          <div class="welcome-about-me-text">
+            <span class="welcome-msg-1"></span>
+            <span class="welcome-msg-2"></span>
+            <span class="welcome-msg-3"></span>
+            <span class="welcome-msg-4"></span>
+            <span class="blink-cursor">_</span>
+          </div>
+          <a href="#project" class="btn welcome-btn">See My Work</a>
         </div>
         <!-- <img
           class="potrait-img"
@@ -254,6 +265,11 @@
         <p>Think of me as the bridge between aesthetics and code.</p>
       </div>
       <div class="project-info" data-aos="zoom-in">
+        <img
+          src="./img/bg-lines.webp"
+          alt="bg-gradient-lines"
+          class="bg-gradient-lines"
+        />
         <h1 class="section-subheading">Projects</h1>
 
         <div class="project-info-wrapper">
@@ -349,7 +365,12 @@
               features for job postings, applications, and candidate tracking.
             </div>
           </div>
-          <div class="project-card" data-aos="fade-down" data-aos-delay="500">
+          <div
+            class="project-card"
+            data-aos="fade-down"
+            data-aos-delay="500"
+            data-aos-offset="0"
+          >
             <div class="project-head-wrapper">
               <div class="project-head-decoration">Phonebook</div>
               <span class="project-link">
@@ -385,42 +406,44 @@
         </p>
       </div>
       <div class="about-me-info" data-aos="zoom-in">
-        <h1 class="section-subheading">About Me</h1>
+        <img
+          src="./img/bg-lines.webp"
+          alt="bg-gradient-lines"
+          class="bg-gradient-lines"
+        />
+        <h1 class="section-subheading">Get to know me!</h1>
         <div class="about-me-info-wrapper">
-          <!-- <div class="about-bio">
-            I am a motivated aspiring front-end web developer with over one year
-            of experience in UI/UX development. I am an Engineering Graduate in
-            Mechanical and more recently, I've achieved a PG Diploma degree in
-            Advanced Computing from CDAC, Electronic City, Bangalore. As a
-            highly motivated and detail-oriented web developer I have a strong
-            foundation in MERN Stack Development,Java Programming,Spring Boot,
-            andSQL Database Management. I am proficient in JavaScript, HTML,
-            CSS, and various front-end frameworks, such as Bootstrap and
-            Material UI. I possess excellent communication and problem-solving
-            skills. I am committed to continuous learning and staying up-to-date
-            with emerging technologies. I am passionate about leveraging my
-            skills and creativity to contribute to the success of an innovative
-            and dynamic team.
-          </div> -->
-          <div class="about-skills">
+          <div class="about-bio" data-aos="fade-left" data-aos-delay="100">
+            As a skilled software developer with expertise in JavaScript and web
+            technologies. I am deeply committed to web performance,
+            accessibility, and enhancing both user experiences. I follow a
+            digital minimalism mindset, using technology to improve people's
+            lives and provide value for businesses. In my free time, I build
+            side projects and like exploring new technologies. You can see some
+            of my work in the projects section below. I'm open to collaboration
+            opportunities where I can contribute, learn and grow. Don't hesitate
+            to reach out if you think my skills and experience are a good fit
+            for your next project.
+          </div>
+          <div class="about-skills" data-aos="fade-left" data-aos-delay="200">
             <div class="tab-wrapper">
               <button
                 type="button"
-                class="tab-links active"
+                class="btn tab-links active"
                 onclick="openForm('skills', this)"
               >
                 Skills
               </button>
               <button
                 type="button"
-                class="tab-links"
+                class="btn tab-links"
                 onclick="openForm('education', this)"
               >
                 Education
               </button>
               <button
                 type="button"
-                class="tab-links"
+                class="btn tab-links"
                 onclick="location.href='./downloads/rohit-sahu-resume.pdf';"
                 download
               >
@@ -486,8 +509,43 @@
       </div>
       <!-- contact -->
       <div class="contact-info" data-aos="zoom-in">
+        <img
+          src="./img/bg-lines.webp"
+          alt="bg-gradient-lines"
+          class="bg-gradient-lines"
+        />
         <h1 class="section-subheading">Contact Me</h1>
         <div class="contact-info-wrapper">
+          <form onsubmit="" class="contact-me-form">
+            <div class="input-wrapper">
+              <label>Name</label>
+              <input class="input" type="text" placeholder="Enter Your Name" />
+            </div>
+            <div class="input-wrapper">
+              <label>Mobile Number</label>
+              <input
+                class="input"
+                type="text"
+                placeholder="Enter Your Mobile Number"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label>Email</label>
+              <input class="input" type="text" placeholder="Enter Your Email" />
+            </div>
+            <div class="input-wrapper">
+              <label>You Message</label>
+              <textarea
+                class="input"
+                type="text"
+                placeholder="Send Me A Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn submit-btn" disabled>
+              Submit
+            </button>
+          </form>
           <div class="contact-info-item">
             <div class="social-wrapper">
               <a
@@ -522,31 +580,12 @@
             <a href="tel:+919399652548">+91-9399652548</a>
             <a href="mailto:irohitsahu97@gmail.com">irohitsahu97@gmail.com</a>
           </div>
-          <form onsubmit="" class="contact-me-form">
-            <div class="input-wrapper">
-              <label>Name</label>
-              <input class="input" type="text" placeholder="Enter Your Name" />
-            </div>
-            <div class="input-wrapper">
-              <label>Mobile Number</label>
-              <input
-                class="input"
-                type="text"
-                placeholder="Enter Your Mobile Number"
-              />
-            </div>
-            <div class="input-wrapper">
-              <label>Email</label>
-              <input class="input" type="text" placeholder="Enter Your Email" />
-            </div>
-            <button type="submit">Submit</button>
-          </form>
         </div>
 
         <!-- footer -->
         <footer>
-          <p class="copyright">© 2023 Rohit Sahu. All rights reserved.</p>
-          <p class="made-by">Designed by <span>Rohit Sahu</span></p>
+          <p class="copyright">© 2024 Rohit Sahu. All rights reserved.</p>
+          <p class="made-by">Designed & Developed by <span>Rohit Sahu</span></p>
         </footer>
       </div>
     </section>

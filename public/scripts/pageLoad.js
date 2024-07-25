@@ -32,31 +32,32 @@ function openSidebar() {
   }
 }
 
-function typeWelcome() {
-  const content = `
-      Hey there!👋<br>
-      I'm Rohit Sahu<br>
-      A front-end developer with expertise in transforming design visions into interactive experiences.<br>
-      Welcome to my portfolio! 🚀✨
-      `;
+async function typeWelcome() {
+  const messages = [
+    "Hey there!👋",
+    "I'm Rohit Sahu",
+    "A front-end developer with expertise in transforming design visions into interactive experiences.",
+    "Welcome to my portfolio! 🚀✨",
+  ];
 
-  const welcomeMsg = document.querySelector(".welcome-msg");
-  let index = 0;
+  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-  function typeWriter() {
-    if (content.slice(index, index + 4) === "<br>") {
-      welcomeMsg.innerHTML += "<br>";
-      index += 4;
-    } else {
-      welcomeMsg.innerHTML += content.charAt(index);
-      index++;
+  async function typeMessage(message, targetElement) {
+    for (let i = 0; i < message.length; i++) {
+      targetElement.innerHTML += message.charAt(i);
+      await delay(30);
     }
-
-    if (index < content.length) {
-      setTimeout(typeWriter, 30); // Adjust typing speed here (in milliseconds)
-    }
+    targetElement.innerHTML += "<br>";
+    await delay(500);
   }
 
-  // Start the typewriting effect
-  typeWriter();
+  const welcomeMsgOne = document.querySelector(".welcome-msg-1");
+  const welcomeMsgTwo = document.querySelector(".welcome-msg-2");
+  const welcomeMsgThree = document.querySelector(".welcome-msg-3");
+  const welcomeMsgFour = document.querySelector(".welcome-msg-4");
+
+  await typeMessage(messages[0], welcomeMsgOne);
+  await typeMessage(messages[1], welcomeMsgTwo);
+  await typeMessage(messages[2], welcomeMsgThree);
+  await typeMessage(messages[3], welcomeMsgFour);
 }
