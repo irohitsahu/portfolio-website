@@ -54,12 +54,18 @@
     width: 60%;
     margin-top: auto;
   }
+  .section-heading p {
+    width: 40%;
+  }
 
   .menu-items {
     display: flex;
   }
   .menu-btn {
     display: none;
+  }
+  .section-subheading {
+    display: block;
   }
 }
 @media (min-width: 1280px) {
