@@ -16,6 +16,13 @@
   .project-info::after {
     content: "";
   }
+
+  .welcome-about-me::before,
+  .about-me-info::before,
+  .contact-info::before,
+  .project-info::before {
+    content: "";
+  }
   .section-heading {
     padding: 0 6rem;
   }
@@ -37,15 +44,20 @@
     flex-direction: row;
     align-items: start;
   }
-
-  .about-bio {
+  .about-bio-wrapper {
     width: 40%;
   }
+
+  /* .about-bio {
+    width: 40%;
+  } */
 
   .about-skills {
     width: 60%;
   }
-
+  .tab-wrapper {
+    justify-content: start;
+  }
   .contact-me-form {
     width: 40%;
   }
@@ -103,5 +115,15 @@
   }
   .menu-items {
     right: 20rem;
+  }
+}
+
+@media (min-height: 700px) and (min-width: 390px) {
+  .hero-cta {
+    display: flex;
+  }
+  .about-me-info-wrapper,
+  .project-info-wrapper {
+    max-height: calc(100% - 3rem);
   }
 }

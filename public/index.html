@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rohit Sahu Portfolio</title>
+    <meta
+      name="description"
+      content="Explore the portfolio of Rohit Sahu, a passionate frontend developer showcasing innovative web designs, interactive user interfaces, and responsive web applications. Discover projects, skills, and creative solutions crafted with HTML, CSS, JavaScript, and modern frameworks."
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script defer type="text/javascript" src="./scripts/pageLoad.js"></script>
+    <link rel="stylesheet" href="styles/aos.css" />
+    <title>Rohit Sahu Portfolio</title>
   </head>
 
   <body>
@@ -31,16 +35,16 @@
         <div class="sidebar" onclick="openSidebar()">
           <div class="sidebar-items">
             <a href="#welcome" class="icon">
-              <img src="./icon/home.svg" alt="home" />
+              <img src="icon/home.svg" alt="home" />
             </a>
             <a href="#about" class="icon">
-              <img src="./icon/about.svg" alt="about" />
+              <img src="icon/about.svg" alt="about" />
             </a>
             <a href="#project" class="icon">
-              <img src="./icon/home.svg" alt="home" />
+              <img src="icon/home.svg" alt="home" />
             </a>
             <a href="#contact" class="icon">
-              <img src="./icon/contact.svg" alt="contact" />
+              <img src="icon/contact.svg" alt="contact" />
             </a>
           </div>
         </div>
@@ -49,208 +53,241 @@
       <img
         onclick="openSidebar()"
         class="menu-btn"
-        src="./icon/menu.svg"
+        src="icon/menu.svg"
         alt=""
       />
       <div class="welcome-about-me" data-aos="zoom-in">
         <img
-          src="./img/bg-lines.webp"
+          src="img/bg-lines.webp"
           alt="bg-gradient-lines"
           class="bg-gradient-lines"
         />
         <div class="welcome-text-wrapper">
           <div class="welcome-about-me-text">
-            <span class="welcome-msg-1"></span>
-            <span class="welcome-msg-2"></span>
-            <span class="welcome-msg-3"></span>
-            <span class="welcome-msg-4"></span>
-            <span class="blink-cursor">_</span>
+            <div class="welcome-msg-wrapper">
+              <span class="welcome-msg-1"></span>
+              <span class="welcome-msg-2"></span>
+              <span class="welcome-msg-3"></span>
+              <span class="welcome-msg-4"></span>
+              <span class="blink-cursor">_</span>
+            </div>
+            <div class="social-wrapper-line">
+              <div class="line"></div>
+              <a
+                href="https://www.linkedin.com/in/irohitsahu/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="icon/linkedin-outline.svg" alt="linkedIn" />
+              </a>
+              <a
+                href="https://github.com/irohitsahu/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="icon/github-outline.svg" alt="github" />
+              </a>
+              <a
+                href="https://wa.me/+919399652548"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="icon/whatsapp-outline.svg" alt="whatsapp" />
+              </a>
+              <a href="mailto:irohitsahu97@gmail.com">
+                <img src="icon/email-outline.svg" alt="whatsapp" />
+              </a>
+            </div>
           </div>
-          <a href="#project" class="btn welcome-btn">See My Work</a>
+          <div class="hero-cta">
+            <a href="#contact" class="btn outline">Reach Out to Me</a>
+            <a href="#about" class="btn">Explore My Career</a>
+            <a href="#project" class="btn">Check Out My Projects</a>
+          </div>
         </div>
         <!-- <img
           class="potrait-img"
-          src="./img/rohit-potrait.webp"
+          src="img/rohit-potrait.webp"
           alt="rohit-potrait"
         /> -->
         <div class="marquee-wrapper">
           <div class="marquee">
             <div>
-              <img src="./icon/react.svg" alt="react" />
+              <img src="icon/react.svg" alt="react" />
               <span>ReactJS</span>
             </div>
             <div>
-              <img src="./icon/nextjs.svg" alt="nextjs" />
+              <img src="icon/nextjs.svg" alt="nextjs" />
               <span>NextJS</span>
             </div>
             <div>
-              <img src="./icon/javascript.svg" alt="javascript" />
+              <img src="icon/javascript.svg" alt="javascript" />
               <span>JavaScript</span>
             </div>
             <div>
-              <img src="./icon/typescript.svg" alt="typescript" />
+              <img src="icon/typescript.svg" alt="typescript" />
               <span>TypeScript</span>
             </div>
             <div>
-              <img src="./icon/html_5.svg" alt="html_5" />
+              <img src="icon/html_5.svg" alt="html_5" />
               <span>HTML</span>
             </div>
             <div>
-              <img src="./icon/css_3.svg" alt="css_3" />
+              <img src="icon/css_3.svg" alt="css_3" />
               <span>CSS</span>
             </div>
             <div>
-              <img src="./icon/sass.svg" alt="sass" />
+              <img src="icon/sass.svg" alt="sass" />
               <span>SCSS/SASS/LESS</span>
             </div>
             <div>
-              <img src="./icon/react.svg" alt="context" />
+              <img src="icon/react.svg" alt="context" />
               <span>Context API</span>
             </div>
             <div>
-              <img src="./icon/redux.svg" alt="redux" />
+              <img src="icon/redux.svg" alt="redux" />
               <span>Redux</span>
             </div>
             <div>
-              <img src="./icon/react-router.svg" alt="react-router" />
+              <img src="icon/react-router.svg" alt="react-router" />
               <span>React Router DOM</span>
             </div>
             <div>
-              <img src="./icon/nextjs.svg" alt="nextjs-router" />
+              <img src="icon/nextjs.svg" alt="nextjs-router" />
               <span>Next.JS Router</span>
             </div>
             <div>
-              <img src="./icon/vite.svg" alt="vite" />
+              <img src="icon/vite.svg" alt="vite" />
               <span>Vite</span>
             </div>
             <div>
-              <img src="./icon/git.svg" alt="git" />
+              <img src="icon/git.svg" alt="git" />
               <span>Git</span>
             </div>
             <div>
-              <img src="./icon/github.svg" alt="github" />
+              <img src="icon/github.svg" alt="github" />
               <span>Github</span>
             </div>
             <div>
-              <img src="./icon/bitbucket.svg" alt="bitbucket" />
+              <img src="icon/bitbucket.svg" alt="bitbucket" />
               <span>Bit Bucket</span>
             </div>
             <div>
-              <img src="./icon/jira.svg" alt="jira" />
+              <img src="icon/jira.svg" alt="jira" />
               <span>Jira</span>
             </div>
             <div>
-              <img src="./icon/tailwind.svg" alt="tailwind" />
+              <img src="icon/tailwind.svg" alt="tailwind" />
               <span>Tailwind</span>
             </div>
             <div>
-              <img src="./icon/styled.svg" alt="styled" />
+              <img src="icon/styled.svg" alt="styled" />
               <span>Styled Components</span>
             </div>
             <div>
-              <img src="./icon/shadecn.svg" alt="shadecn" />
+              <img src="icon/shadecn.svg" alt="shadecn" />
               <span>ShadeCN</span>
             </div>
             <div>
-              <img src="./icon/material_ui.svg" alt="material_ui" />
+              <img src="icon/material_ui.svg" alt="material_ui" />
               <span>Material UI</span>
             </div>
             <div>
-              <img src="./icon/ant-design.svg" alt="ant-design" />
+              <img src="icon/ant-design.svg" alt="ant-design" />
               <span>AntDesign</span>
             </div>
             <div>
-              <img src="./icon/bootstrap.svg" alt="bootstrap" />
+              <img src="icon/bootstrap.svg" alt="bootstrap" />
               <span>Bootstrap</span>
             </div>
           </div>
           <div class="marquee">
             <div>
-              <img src="./icon/react.svg" alt="react" />
+              <img src="icon/react.svg" alt="react" />
               <span>ReactJS</span>
             </div>
             <div>
-              <img src="./icon/nextjs.svg" alt="nextjs" />
+              <img src="icon/nextjs.svg" alt="nextjs" />
               <span>NextJS</span>
             </div>
             <div>
-              <img src="./icon/javascript.svg" alt="javascript" />
+              <img src="icon/javascript.svg" alt="javascript" />
               <span>JavaScript</span>
             </div>
             <div>
-              <img src="./icon/typescript.svg" alt="typescript" />
+              <img src="icon/typescript.svg" alt="typescript" />
               <span>TypeScript</span>
             </div>
             <div>
-              <img src="./icon/html_5.svg" alt="html_5" />
+              <img src="icon/html_5.svg" alt="html_5" />
               <span>HTML</span>
             </div>
             <div>
-              <img src="./icon/css_3.svg" alt="css_3" />
+              <img src="icon/css_3.svg" alt="css_3" />
               <span>CSS</span>
             </div>
             <div>
-              <img src="./icon/sass.svg" alt="sass" />
+              <img src="icon/sass.svg" alt="sass" />
               <span>SCSS/SASS/LESS</span>
             </div>
             <div>
-              <img src="./icon/react.svg" alt="context" />
+              <img src="icon/react.svg" alt="context" />
               <span>Context API</span>
             </div>
             <div>
-              <img src="./icon/redux.svg" alt="redux" />
+              <img src="icon/redux.svg" alt="redux" />
               <span>Redux</span>
             </div>
             <div>
-              <img src="./icon/react-router.svg" alt="react-router" />
+              <img src="icon/react-router.svg" alt="react-router" />
               <span>React Router DOM</span>
             </div>
             <div>
-              <img src="./icon/nextjs.svg" alt="nextjs-router" />
+              <img src="icon/nextjs.svg" alt="nextjs-router" />
               <span>Next.JS Router</span>
             </div>
             <div>
-              <img src="./icon/vite.svg" alt="vite" />
+              <img src="icon/vite.svg" alt="vite" />
               <span>Vite</span>
             </div>
             <div>
-              <img src="./icon/git.svg" alt="git" />
+              <img src="icon/git.svg" alt="git" />
               <span>Git</span>
             </div>
             <div>
-              <img src="./icon/github.svg" alt="github" />
+              <img src="icon/github.svg" alt="github" />
               <span>Github</span>
             </div>
             <div>
-              <img src="./icon/bitbucket.svg" alt="bitbucket" />
+              <img src="icon/bitbucket.svg" alt="bitbucket" />
               <span>Bit Bucket</span>
             </div>
             <div>
-              <img src="./icon/jira.svg" alt="jira" />
+              <img src="icon/jira.svg" alt="jira" />
               <span>Jira</span>
             </div>
             <div>
-              <img src="./icon/tailwind.svg" alt="tailwind" />
+              <img src="icon/tailwind.svg" alt="tailwind" />
               <span>Tailwind</span>
             </div>
             <div>
-              <img src="./icon/styled.svg" alt="styled" />
+              <img src="icon/styled.svg" alt="styled" />
               <span>Styled Components</span>
             </div>
             <div>
-              <img src="./icon/shadecn.svg" alt="shadecn" />
+              <img src="icon/shadecn.svg" alt="shadecn" />
               <span>ShadeCN</span>
             </div>
             <div>
-              <img src="./icon/material_ui.svg" alt="material_ui" />
+              <img src="icon/material_ui.svg" alt="material_ui" />
               <span>Material UI</span>
             </div>
             <div>
-              <img src="./icon/ant-design.svg" alt="ant-design" />
+              <img src="icon/ant-design.svg" alt="ant-design" />
               <span>AntDesign</span>
             </div>
             <div>
-              <img src="./icon/bootstrap.svg" alt="bootstrap" />
+              <img src="icon/bootstrap.svg" alt="bootstrap" />
               <span>Bootstrap</span>
             </div>
           </div>
@@ -266,7 +303,7 @@
       </div>
       <div class="project-info" data-aos="zoom-in">
         <img
-          src="./img/bg-lines.webp"
+          src="img/bg-lines.webp"
           alt="bg-gradient-lines"
           class="bg-gradient-lines"
         />
@@ -282,13 +319,21 @@
                   href="https://github.com/irohitsahu/portfolio-website"
                   title="Github"
                 >
-                  <img class="icn-size" src="icon/github.svg" alt="repo" />
+                  <img
+                    class="icn-size"
+                    src="icon/github-outline.svg"
+                    alt="repo"
+                  />
                 </a>
                 <a
                   href="https://rohit-sahu-portfolio.web.app/"
                   title="Live Link"
                 >
-                  <img class="icn-size" src="icon/live.svg" alt="live" />
+                  <img
+                    class="icn-size"
+                    src="icon/external-link.svg"
+                    alt="live"
+                  />
                 </a>
               </span>
             </div>
@@ -306,11 +351,18 @@
             <div class="project-head-wrapper">
               <div class="project-head-decoration">Portfolio Website V2</div>
               <span class="project-link">
-                <a href="http://" title="Github">
-                  <img class="icn-size" src="icon/github.svg" alt="repo" />
+                <a
+                  href="https://github.com/irohitsahu/portfolio"
+                  title="Github"
+                >
+                  <img
+                    class="icn-size"
+                    src="icon/github-outline.svg"
+                    alt="repo"
+                  />
                 </a>
                 <!-- <a href="http://" title="Live Link">
-                  <img class="icn-size" src="icon/live.svg" alt="live" />
+                  <img class="icn-size" src="icon/external-link.svg" alt="live" />
                 </a> -->
               </span>
             </div>
@@ -333,10 +385,14 @@
                   href="https://github.com/irohitsahu/openai-text-to-image"
                   title="Github"
                 >
-                  <img class="icn-size" src="icon/github.svg" alt="repo" />
+                  <img
+                    class="icn-size"
+                    src="icon/github-outline.svg"
+                    alt="repo"
+                  />
                 </a>
                 <!-- <a href="http://" title="Live Link">
-                  <img class="icn-size" src="icon/live.svg" alt="live" />
+                  <img class="icn-size" src="icon/external-link.svg" alt="live" />
                 </a> -->
               </span>
             </div>
@@ -359,10 +415,14 @@
                   href="https://github.com/irohitsahu/hire-path"
                   title="Github"
                 >
-                  <img class="icn-size" src="icon/github.svg" alt="repo" />
+                  <img
+                    class="icn-size"
+                    src="icon/github-outline.svg"
+                    alt="repo"
+                  />
                 </a>
                 <!-- <a href="http://" title="Live Link">
-                  <img class="icn-size" src="icon/live.svg" alt="live" />
+                  <img class="icn-size" src="icon/external-link.svg" alt="live" />
                 </a> -->
               </span>
             </div>
@@ -385,12 +445,20 @@
             <div class="project-head-wrapper">
               <div class="project-head-decoration">Phonebook</div>
               <span class="project-link">
-                <a href="http://" title="Github">
-                  <img class="icn-size" src="icon/github.svg" alt="repo" />
+                <!-- <a href="http://" title="Github">
+                  <img
+                    class="icn-size"
+                    src="icon/github-outline.svg"
+                    alt="repo"
+                  />
                 </a>
                 <a href="http://" title="Live Link">
-                  <img class="icn-size" src="icon/live.svg" alt="live" />
-                </a>
+                  <img
+                    class="icn-size"
+                    src="icon/external-link.svg"
+                    alt="live"
+                  />
+                </a> -->
               </span>
             </div>
             <div class="project-date-decoration">(June 2023)</div>
@@ -410,7 +478,7 @@
     <!-- about -->
     <section id="about">
       <div class="section-heading">
-        <div>My <span>Resume</span></div>
+        <div>My<span>Career</span></div>
         <p>
           With a year of experience, I&apos;ve honed my skills in crafting
           delightful interfaces and writing clean, efficient code.
@@ -418,23 +486,40 @@
       </div>
       <div class="about-me-info" data-aos="zoom-in">
         <img
-          src="./img/bg-lines.webp"
+          src="img/bg-lines.webp"
           alt="bg-gradient-lines"
           class="bg-gradient-lines"
         />
         <h1 class="section-subheading">Get to know me!</h1>
         <div class="about-me-info-wrapper">
-          <div class="about-bio" data-aos="fade-left" data-aos-delay="100">
-            As a skilled software developer with expertise in JavaScript and web
-            technologies. I am deeply committed to web performance,
-            accessibility, and enhancing both user experiences. I follow a
-            digital minimalism mindset, using technology to improve people's
-            lives and provide value for businesses. In my free time, I build
-            side projects and like exploring new technologies. You can see some
-            of my work in the projects section below. I'm open to collaboration
-            opportunities where I can contribute, learn and grow. Don't hesitate
-            to reach out if you think my skills and experience are a good fit
-            for your next project.
+          <div class="about-bio-wrapper">
+            <div>
+              <h1 class="section-subheading">About Me</h1>
+              <div class="about-bio" data-aos="fade-left" data-aos-delay="100">
+                As a skilled software developer with expertise in JavaScript and
+                web technologies. I am deeply committed to web performance,
+                accessibility, and enhancing user experiences. I follow a
+                digital minimalism mindset, using technology to improve people's
+                lives and provide value for businesses. In my free time, I build
+                side projects and like exploring new technologies. You can see
+                some of my work in the projects section. I'm open to
+                collaboration opportunities where I can contribute, learn and
+                grow. Don't hesitate to reach out if you think my skills and
+                experience are a good fit for your next project.
+              </div>
+            </div>
+            <div>
+              <h1 class="section-subheading">Professional Experience</h1>
+              <div
+                class="about-experience"
+                data-aos="fade-left"
+                data-aos-delay="100"
+              >
+                <span class="font-bold">UI/UX Developer</span>
+                <span class="font-xs">June 2023 - Present</span>
+                <span>Globussoft Private Limited, Bhilai</span>
+              </div>
+            </div>
           </div>
           <div class="about-skills" data-aos="fade-left" data-aos-delay="200">
             <div class="tab-wrapper">
@@ -452,14 +537,9 @@
               >
                 Education
               </button>
-              <button
-                type="button"
-                class="btn tab-links"
-                onclick="location.href='./downloads/rohit-sahu-resume.pdf';"
-                download
-              >
-                Download Resume
-              </button>
+              <a class="btn" href="downloads/rohit-sahu-resume.pdf" download>
+                Resume
+              </a>
             </div>
             <div class="tab-contents">
               <div id="skills" class="active">
@@ -521,28 +601,44 @@
       <!-- contact -->
       <div class="contact-info" data-aos="zoom-in">
         <img
-          src="./img/bg-lines.webp"
+          src="img/bg-lines.webp"
           alt="bg-gradient-lines"
           class="bg-gradient-lines"
         />
         <h1 class="section-subheading">Contact Me</h1>
         <div class="contact-info-wrapper">
-          <form onsubmit="" class="contact-me-form">
+          <form onsubmit="handelFormSubmit()" class="contact-me-form">
             <div class="input-wrapper">
-              <label>Name</label>
-              <input class="input" type="text" placeholder="Enter Your Name" />
+              <label>Name*</label>
+              <input
+                class="input"
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+                onchange="handleFormInputChange()"
+              />
             </div>
             <div class="input-wrapper">
               <label>Mobile Number</label>
               <input
                 class="input"
                 type="text"
+                name="Mobile"
                 placeholder="Enter Your Mobile Number"
+                onchange="handleFormInputChange()"
               />
             </div>
             <div class="input-wrapper">
-              <label>Email</label>
-              <input class="input" type="text" placeholder="Enter Your Email" />
+              <label>Email*</label>
+              <input
+                class="input"
+                type="text"
+                name="Email"
+                placeholder="Enter Your Email"
+                required
+                onchange="handleFormInputChange()"
+              />
             </div>
             <div class="input-wrapper">
               <label>You Message</label>
@@ -551,13 +647,13 @@
                 type="text"
                 placeholder="Send Me A Message"
                 rows="5"
+                onchange="handleFormInputChange()"
               ></textarea>
             </div>
-            <button type="submit" class="btn submit-btn" disabled>
-              Submit
-            </button>
+            <button type="submit" class="btn submit-btn">Submit</button>
           </form>
           <div class="contact-info-item">
+            <img class="rohit-potrait" src="img/rohit.webp" alt="potrait" />
             <div class="social-wrapper">
               <a
                 href="https://www.linkedin.com/in/irohitsahu/"
@@ -566,7 +662,7 @@
                 target="_blank"
                 rel="noopener"
               >
-                <img src="./icon/linkedIn.svg" alt="linkedIn" />
+                <img src="icon/linkedIn.svg" alt="linkedIn" />
               </a>
               <a
                 href="https://github.com/irohitsahu/"
@@ -575,7 +671,7 @@
                 target="_blank"
                 rel="noopener"
               >
-                <img src="./icon/github.svg" alt="github" />
+                <img src="icon/github.svg" alt="github" />
               </a>
               <a
                 href="https://wa.me/+919399652548"
@@ -584,7 +680,7 @@
                 target="_blank"
                 rel="noopener"
               >
-                <img src="./icon/whatsapp.svg" alt="whatsapp" />
+                <img src="icon/whatsapp.svg" alt="whatsapp" />
               </a>
             </div>
 
@@ -595,12 +691,18 @@
 
         <!-- footer -->
         <footer>
-          <p class="copyright">© 2024 Rohit Sahu. All rights reserved.</p>
+          <!-- <p class="copyright">© 2024 Rohit Sahu. All rights reserved.</p> -->
           <p class="made-by">Designed & Developed by <span>Rohit Sahu</span></p>
         </footer>
       </div>
     </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="scripts/contactFormValidations.js"
+    ></script>
+    <script defer type="text/javascript" src="scripts/pageLoad.js"></script>
     <script>
       AOS.init({ once: false, mirror: true });
     </script>

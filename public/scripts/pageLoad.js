@@ -1,7 +1,6 @@
 window.onload = function () {
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
   typeWelcome();
-  console.log("Page loaded and scrolled to top");
 };
 
 function openForm(type, button) {
