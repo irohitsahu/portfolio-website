@@ -47,7 +47,7 @@ async function typeWelcome() {
       await delay(30);
     }
     targetElement.innerHTML += "<br>";
-    await delay(500);
+    await delay(100);
   }
 
   const welcomeMsgOne = document.querySelector(".welcome-msg-1");

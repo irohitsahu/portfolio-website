@@ -57,6 +57,14 @@
     height: 100dvh;
   }
 
+  .about-me-info-wrapper,
+  .contact-info-wrapper,
+  .project-info-wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%;
+  }
+
   .about-bio {
     grid-column: 1 /6;
   }
@@ -77,6 +85,10 @@
   .contact-info,
   .project-info {
     height: calc(100dvh - 6rem);
+  }
+  .contact-info-wrapper {
+    max-height: calc(100% - 6rem);
+    /* margin-bottom: 3rem; */
   }
 
   .tab-wrapper {
@@ -101,6 +113,9 @@
   }
   .section-subheading {
     display: block;
+  }
+  footer {
+    bottom: 3rem;
   }
 }
 @media (min-width: 1280px) {

@@ -9,6 +9,7 @@
       content="Explore the portfolio of Rohit Sahu, a passionate frontend developer showcasing innovative web designs, interactive user interfaces, and responsive web applications. Discover projects, skills, and creative solutions crafted with HTML, CSS, JavaScript, and modern frameworks."
     />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/aos.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
     <title>Rohit Sahu Portfolio</title>
@@ -55,7 +56,7 @@
         src="icon/menu.svg"
         alt=""
       />
-      <div class="welcome-about-me">
+      <div data-aos="zoom-in" data-aos-offset="0" class="welcome-about-me">
         <img
           src="img/bg-lines.webp"
           alt="bg-gradient-lines"
@@ -73,6 +74,8 @@
             <div class="social-wrapper-line">
               <div class="line"></div>
               <a
+                data-aos="zoom-in"
+                data-aos-delay="100"
                 href="https://www.linkedin.com/in/irohitsahu/"
                 target="_blank"
                 rel="noopener"
@@ -80,6 +83,8 @@
                 <img src="icon/linkedin-outline.svg" alt="linkedIn" />
               </a>
               <a
+                data-aos="zoom-in"
+                data-aos-delay="200"
                 href="https://github.com/irohitsahu/"
                 target="_blank"
                 rel="noopener"
@@ -87,21 +92,41 @@
                 <img src="icon/github-outline.svg" alt="github" />
               </a>
               <a
+                data-aos="zoom-in"
+                data-aos-delay="300"
                 href="https://wa.me/+919399652548"
                 target="_blank"
                 rel="noopener"
               >
                 <img src="icon/whatsapp-outline.svg" alt="whatsapp" />
               </a>
-              <a href="mailto:irohitsahu97@gmail.com">
+              <a
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                href="mailto:irohitsahu97@gmail.com"
+              >
                 <img src="icon/email-outline.svg" alt="whatsapp" />
               </a>
             </div>
           </div>
           <div class="hero-cta">
-            <a href="#contact" class="btn outline">Reach Out to Me</a>
-            <a href="#about" class="btn">Explore My Career</a>
-            <a href="#project" class="btn">Check Out My Projects</a>
+            <a
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              href="#contact"
+              class="btn outline"
+              >Reach Out to Me</a
+            >
+            <a data-aos="zoom-in" data-aos-delay="200" href="#about" class="btn"
+              >Explore My Career</a
+            >
+            <a
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              href="#project"
+              class="btn"
+              >Check Out My Projects</a
+            >
           </div>
         </div>
         <!-- <img
@@ -300,7 +325,7 @@
         <div>Project's<span>By Me</span></div>
         <p>Think of me as the bridge between aesthetics and code.</p>
       </div>
-      <div class="project-info">
+      <div data-aos="zoom-in" data-aos-offset="0" class="project-info">
         <img
           src="img/bg-lines.webp"
           alt="bg-gradient-lines"
@@ -310,7 +335,7 @@
 
         <div class="project-info-wrapper">
           <!-- Project List -->
-          <div class="project-card">
+          <div data-aos="zoom-out" data-aos-delay="100" class="project-card">
             <div class="project-head-wrapper">
               <div class="project-head-decoration">Portfolio Website V1</div>
               <span class="project-link">
@@ -346,7 +371,7 @@
               showcase my skills and projects.
             </div>
           </div>
-          <div class="project-card">
+          <div data-aos="zoom-out" data-aos-delay="150" class="project-card">
             <div class="project-head-wrapper">
               <div class="project-head-decoration">Portfolio Website V2</div>
               <span class="project-link">
@@ -376,7 +401,7 @@
               capabilities.
             </div>
           </div>
-          <div class="project-card">
+          <div data-aos="zoom-out" data-aos-delay="200" class="project-card">
             <div class="project-head-wrapper">
               <div class="project-head-decoration">OpenAI Image Generator</div>
               <span class="project-link">
@@ -406,7 +431,7 @@
               custom images based on user inputs.
             </div>
           </div>
-          <div class="project-card">
+          <div data-aos="zoom-out" data-aos-delay="250" class="project-card">
             <div class="project-head-wrapper">
               <div class="project-head-decoration">Hire Path</div>
               <span class="project-link">
@@ -435,7 +460,7 @@
               features for job postings, applications, and candidate tracking.
             </div>
           </div>
-          <div class="project-card">
+          <div data-aos="zoom-out" data-aos-delay="300" class="project-card">
             <div class="project-head-wrapper">
               <div class="project-head-decoration">Phonebook</div>
               <span class="project-link">
@@ -478,7 +503,7 @@
           delightful interfaces and writing clean, efficient code.
         </p>
       </div>
-      <div class="about-me-info">
+      <div data-aos="zoom-in" data-aos-offset="0" class="about-me-info">
         <img
           src="img/bg-lines.webp"
           alt="bg-gradient-lines"
@@ -486,7 +511,7 @@
         />
         <!-- <h1 class="section-subheading">Get to know me!</h1> -->
         <div class="about-me-info-wrapper">
-          <div class="about-bio">
+          <div data-aos="zoom-out" data-aos-delay="100" class="about-bio">
             <h1 class="section-subheading">About Me</h1>
             <div>
               As a skilled software developer with expertise in JavaScript and
@@ -501,7 +526,7 @@
               good fit for your next project.
             </div>
           </div>
-          <div class="prof-exp">
+          <div data-aos="zoom-out" data-aos-delay="200" class="prof-exp">
             <h1 class="section-subheading text-dark">
               Professional Experience
             </h1>
@@ -511,7 +536,12 @@
               <span>Globussoft Private Limited, Bhilai</span>
             </div>
           </div>
-          <div id="skills" class="active">
+          <div
+            data-aos="zoom-out"
+            data-aos-delay="300"
+            id="skills"
+            class="active"
+          >
             <h1 class="section-subheading">Technical Skills</h1>
             <div class="skills-info">
               <p>Libraries and Frameworks <span>ReactJS | NextJS</span></p>
@@ -535,7 +565,12 @@
               </p>
             </div>
           </div>
-          <div id="education" class="active">
+          <div
+            data-aos="zoom-out"
+            data-aos-delay="400"
+            id="education"
+            class="active"
+          >
             <h1 class="section-subheading">Education</h1>
             <div class="skills-info">
               <div class="institute-decoration">
@@ -566,7 +601,7 @@
         </p>
       </div>
       <!-- contact -->
-      <div class="contact-info">
+      <div data-aos="zoom-in" data-aos-offset="0" class="contact-info">
         <img
           src="img/bg-lines.webp"
           alt="bg-gradient-lines"
@@ -575,7 +610,7 @@
         <!-- <h1 class="section-subheading">Contact Me</h1> -->
         <div class="contact-info-wrapper">
           <form onsubmit="handelFormSubmit()" class="contact-me-form">
-            <div class="input-wrapper">
+            <div data-aos="zoom-out" data-aos-delay="100" class="input-wrapper">
               <label>Name*</label>
               <input
                 class="input"
@@ -586,7 +621,7 @@
                 onchange="handleFormInputChange()"
               />
             </div>
-            <div class="input-wrapper">
+            <div data-aos="zoom-out" data-aos-delay="200" class="input-wrapper">
               <label>Mobile Number</label>
               <input
                 class="input"
@@ -596,7 +631,7 @@
                 onchange="handleFormInputChange()"
               />
             </div>
-            <div class="input-wrapper">
+            <div data-aos="zoom-out" data-aos-delay="300" class="input-wrapper">
               <label>Email*</label>
               <input
                 class="input"
@@ -607,7 +642,7 @@
                 onchange="handleFormInputChange()"
               />
             </div>
-            <div class="input-wrapper">
+            <div data-aos="zoom-out" data-aos-delay="400" class="input-wrapper">
               <label>You Message</label>
               <textarea
                 class="input"
@@ -617,42 +652,68 @@
                 onchange="handleFormInputChange()"
               ></textarea>
             </div>
-            <button type="submit" class="btn submit-btn">Submit</button>
+            <button
+              data-aos="zoom-out"
+              data-aos-delay="500"
+              type="submit"
+              class="btn submit-btn"
+            >
+              Submit
+            </button>
           </form>
           <div class="contact-info-item">
-            <img class="rohit-potrait" src="img/rohit.webp" alt="potrait" />
+            <img
+              data-aos="zoom-out"
+              data-aos-delay="100"
+              class="rohit-potrait"
+              src="img/rohit.webp"
+              alt="potrait"
+            />
             <div class="social-wrapper">
               <a
+                data-aos="zoom-out"
+                data-aos-delay="200"
                 href="https://www.linkedin.com/in/irohitsahu/"
                 class="icon"
                 data-panel="welcome"
                 target="_blank"
                 rel="noopener"
               >
-                <img src="icon/linkedIn.svg" alt="linkedIn" />
+                <img src="icon/linkedin-outline.svg" alt="linkedIn" />
               </a>
               <a
+                data-aos="zoom-out"
+                data-aos-delay="300"
                 href="https://github.com/irohitsahu/"
                 class="icon"
                 data-panel="welcome"
                 target="_blank"
                 rel="noopener"
               >
-                <img src="icon/github.svg" alt="github" />
+                <img src="icon/github-outline.svg" alt="github" />
               </a>
               <a
+                data-aos="zoom-out"
+                data-aos-delay="400"
                 href="https://wa.me/+919399652548"
                 class="icon"
                 data-panel="welcome"
                 target="_blank"
                 rel="noopener"
               >
-                <img src="icon/whatsapp.svg" alt="whatsapp" />
+                <img src="icon/whatsapp-outline.svg" alt="whatsapp" />
               </a>
             </div>
 
-            <a href="tel:+919399652548">+91-9399652548</a>
-            <a href="mailto:irohitsahu97@gmail.com">irohitsahu97@gmail.com</a>
+            <a data-aos="zoom-out" data-aos-delay="500" href="tel:+919399652548"
+              >+91-9399652548</a
+            >
+            <a
+              data-aos="zoom-out"
+              data-aos-delay="600"
+              href="mailto:irohitsahu97@gmail.com"
+              >irohitsahu97@gmail.com</a
+            >
           </div>
         </div>
       </div>
@@ -668,5 +729,11 @@
       src="scripts/contactFormValidations.js"
     ></script>
     <script defer type="text/javascript" src="scripts/pageLoad.js"></script>
+    <script defer type="text/javascript" src="scripts/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({ offset: -200, once: false, mirror: true, duration: 300 });
+      });
+    </script>
   </body>
 </html>

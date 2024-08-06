@@ -78,7 +78,7 @@ nav {
   gap: 1rem;
 }
 .icon {
-  background-color: var(--pimaryAccent);
+  background-color: var(--dakHeader);
   padding: 0.5rem 1rem;
   border-radius: 0.3rem;
   cursor: pointer;
@@ -250,6 +250,7 @@ nav {
   min-height: calc(100dvh - 6rem);
   width: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 2rem 1rem;
   transition: min-height 500ms ease-in-out;
   border-radius: 1rem;
@@ -304,13 +305,6 @@ nav {
   background-color: var(--dakHeader);
   border-radius: 0.5rem;
   padding: 1rem;
-  overflow-y: auto;
-  overflow-x: hidden;
-  max-height: 100%;
-}
-.contact-info-wrapper {
-  /* max-height: calc(100% - 6rem); */
-  /* margin-bottom: 3rem; */
 }
 
 .bg-gradient-lines {
@@ -321,7 +315,7 @@ nav {
   height: 100%;
   filter: blur(1px);
   opacity: 0.2;
-  z-index: -2;
+  z-index: -1;
 }
 
 .welcome-text-wrapper {
