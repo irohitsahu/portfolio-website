@@ -38,33 +38,51 @@
   }
 }
 @media (min-width: 1024px) {
+  html {
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+  }
+
+  #welcome,
+  #about,
+  #project,
+  #contact {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100dvh;
+  }
+
+  .about-bio {
+    grid-column: 1 /6;
+  }
+  .prof-exp {
+    grid-column: 1 / 6;
+  }
+
+  #skills {
+    grid-column: 6 / 13;
+    grid-row: 1/ 3;
+  }
+  #education {
+    grid-column: 1 / 13;
+  }
+
   .welcome-about-me,
-  .about-me-info-wrapper,
-  .contact-info-wrapper {
-    flex-direction: row;
-    align-items: start;
-  }
-  .about-bio-wrapper {
-    width: 40%;
+  .about-me-info,
+  .contact-info,
+  .project-info {
+    height: calc(100dvh - 6rem);
   }
 
-  /* .about-bio {
-    width: 40%;
-  } */
-
-  .about-skills {
-    width: 60%;
-  }
   .tab-wrapper {
     justify-content: start;
   }
   .contact-me-form {
-    width: 40%;
+    grid-column: 1 / 6;
   }
 
   .contact-info-item {
-    width: 60%;
-    margin-top: auto;
+    grid-column: 6 / 13;
   }
   .section-heading p {
     width: 40%;
@@ -121,9 +139,5 @@
 @media (min-height: 700px) and (min-width: 390px) {
   .hero-cta {
     display: flex;
-  }
-  .about-me-info-wrapper,
-  .project-info-wrapper {
-    max-height: calc(100% - 3rem);
   }
 }
