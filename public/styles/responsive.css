@@ -43,6 +43,11 @@
     scroll-snap-type: y mandatory;
   }
 
+  .welcome-text-wrapper {
+    position: relative;
+    height: calc(100% - 9.25rem);
+  }
+
   #welcome,
   #about,
   #project,
