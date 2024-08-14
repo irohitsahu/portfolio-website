@@ -111,10 +111,18 @@
           </div>
           <div class="hero-cta">
             <a
+              download
+              href="downloads/rohit-sahu-resume.pdf"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              class="btn outline"
+              >Downlaod Resume</a
+            >
+            <a
               data-aos="zoom-in"
               data-aos-delay="100"
               href="#contact"
-              class="btn outline"
+              class="btn"
               >Reach Out to Me</a
             >
             <a data-aos="zoom-in" data-aos-delay="200" href="#about" class="btn"
@@ -609,47 +617,50 @@
         />
         <!-- <h1 class="section-subheading">Contact Me</h1> -->
         <div class="contact-info-wrapper">
-          <form onsubmit="handelFormSubmit()" class="contact-me-form">
+          <form onsubmit="handleFormSubmit(event)" class="contact-me-form">
             <div data-aos="zoom-out" data-aos-delay="100" class="input-wrapper">
-              <label>Name*</label>
+              <label>Name*<span class="error-msg" name="name"></span></label>
               <input
                 class="input"
                 type="text"
-                name="Name"
+                name="name"
                 placeholder="Enter Your Name"
-                required
-                onchange="handleFormInputChange()"
+                onchange="handleFormInputChange(event)"
               />
             </div>
             <div data-aos="zoom-out" data-aos-delay="200" class="input-wrapper">
-              <label>Mobile Number</label>
+              <label
+                >Mobile Number<span class="error-msg" name="mobile"></span
+              ></label>
               <input
                 class="input"
                 type="text"
-                name="Mobile"
+                name="mobile"
                 placeholder="Enter Your Mobile Number"
-                onchange="handleFormInputChange()"
+                onchange="handleFormInputChange(event)"
               />
             </div>
             <div data-aos="zoom-out" data-aos-delay="300" class="input-wrapper">
-              <label>Email*</label>
+              <label>Email*<span class="error-msg" name="email"></span></label>
               <input
                 class="input"
                 type="text"
-                name="Email"
+                name="email"
                 placeholder="Enter Your Email"
-                required
-                onchange="handleFormInputChange()"
+                onchange="handleFormInputChange(event)"
               />
             </div>
             <div data-aos="zoom-out" data-aos-delay="400" class="input-wrapper">
-              <label>You Message</label>
+              <label
+                >You Message<span class="error-msg" name="message"></span
+              ></label>
               <textarea
                 class="input"
                 type="text"
+                name="message"
                 placeholder="Send Me A Message"
                 rows="5"
-                onchange="handleFormInputChange()"
+                onchange="handleFormInputChange(event)"
               ></textarea>
             </div>
             <button
@@ -724,7 +735,6 @@
       <p class="made-by">Designed & Developed by <span>Rohit Sahu</span></p>
     </footer>
     <script
-      defer
       type="text/javascript"
       src="scripts/contactFormValidations.js"
     ></script>

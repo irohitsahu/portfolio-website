@@ -200,7 +200,7 @@ nav {
   cursor: pointer;
   z-index: auto;
   font-size: medium;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   box-shadow: 10px 10px 10px #0005;
 }
 .btn.active {
@@ -210,6 +210,7 @@ nav {
 
 .btn:hover {
   box-shadow: 5px 5px 10px #000;
+  transform: scale(1.2);
 }
 
 .btn.outline {
@@ -404,6 +405,11 @@ nav {
 
 .social-wrapper-line a img {
   width: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-wrapper-line a img:hover {
+  transform: scale(1.1);
 }
 
 /* about sections*/
@@ -627,6 +633,15 @@ nav {
   grid-column: span 12 / span 12;
 }
 
+.error-msg {
+  position: absolute;
+  right: 0;
+  color: #ba000d;
+  font-weight: 600;
+  font-size: 12px;
+  display: none;
+}
+
 .input-wrapper {
   display: flex;
   flex-direction: column;
@@ -639,6 +654,7 @@ nav {
   border: 1px solid var(--pimaryAccent);
   border-radius: 0.3rem;
   background-color: var(--darkBG);
+  color: var(--primaryText);
 }
 
 .submit-btn {
