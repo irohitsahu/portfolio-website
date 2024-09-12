@@ -87,7 +87,11 @@ nav {
 .icon img {
   width: 1.5rem;
   height: 1.5rem;
-  pointer-events: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon img:hover {
+  transform: scale(1.1);
 }
 
 /* logo animations */
@@ -228,7 +232,7 @@ nav {
   display: inline-block;
   font-weight: 100;
   font-size: 30px;
-  color: #2e3d48;
+  color: #ffffff;
   animation: 1s blink step-end infinite;
 }
 @keyframes blink {
@@ -237,7 +241,7 @@ nav {
     color: transparent;
   }
   50% {
-    color: black;
+    color: #ffffff;
   }
 }
 
@@ -404,6 +408,11 @@ nav {
 
 .social-wrapper-line a img {
   width: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-wrapper-line a img:hover {
+  transform: scale(1.1);
 }
 
 /* about sections*/
@@ -544,6 +553,11 @@ nav {
 .icn-size {
   width: 20px;
   height: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icn-size:hover {
+  transform: scale(1.1);
 }
 
 .project-head-wrapper {
@@ -639,10 +653,11 @@ nav {
   border: 1px solid var(--pimaryAccent);
   border-radius: 0.3rem;
   background-color: var(--darkBG);
+  color: #fff;
 }
 
 .submit-btn {
-  width: 100px;
+  /* width: 100px; */
 }
 footer {
   background-color: var(--dakHeader);
@@ -728,6 +743,14 @@ footer {
   color: var(--primaryText);
 }
 
+.error-msg {
+  color: #ff0000;
+  font-size: 12px;
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+}
+
 @keyframes shake {
   0% {
     transform: scale(1);
@@ -772,6 +795,10 @@ footer {
 
 .font-xs {
   font-size: 0.8rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 *::-webkit-scrollbar {

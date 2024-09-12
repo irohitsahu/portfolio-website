@@ -46,6 +46,7 @@
   .welcome-text-wrapper {
     position: relative;
     height: calc(100% - 9.25rem);
+    z-index: 10;
   }
 
   #welcome,
@@ -87,8 +88,10 @@
     height: calc(100dvh - 6rem);
   }
   .contact-info-wrapper {
+    position: relative;
     max-height: calc(100% - 6rem);
     /* margin-bottom: 3rem; */
+    z-index: 10;
   }
 
   .tab-wrapper {
