@@ -31,6 +31,7 @@
           <a class="under-line-eff" href="#project">Projects</a>
           <a class="under-line-eff" href="#about">About</a>
           <a class="under-line-eff" href="#contact">Contact</a>
+          <a onclick="viewResume()" class="under-line-eff">View Resume</a>
         </div>
         <div class="sidebar" onclick="openSidebar()">
           <div class="sidebar-items">
@@ -46,6 +47,9 @@
             <a href="#contact" class="icon">
               <img src="icon/contact.svg" alt="contact" />
             </a>
+            <a onclick="viewResume()" class="icon">
+              <img src="icon/download.svg" alt="contact"
+            /></a>
           </div>
         </div>
       </nav>
@@ -111,12 +115,7 @@
           </div>
           <div class="hero-cta">
             <div data-aos="zoom-in" data-aos-delay="100">
-              <a
-                download
-                href="downloads/rohit-sahu-resume.pdf"
-                class="btn outline"
-                >Downlaod Resume</a
-              >
+              <a onclick="viewResume()" class="btn outline">View Resume</a>
             </div>
             <div data-aos="zoom-in" data-aos-delay="200">
               <a href="#contact" class="btn">Reach Out to Me</a>
@@ -531,9 +530,9 @@
               Professional Experience
             </h1>
             <div class="about-experience">
-              <span class="font-bold">UI/UX Developer</span>
-              <span class="font-xs">June 2023 - Present</span>
-              <span>Globussoft Private Limited, Bhilai</span>
+              <span class="font-bold">Software Developer</span>
+              <span class="font-xs">March 2023 - Present</span>
+              <span>Globussoft Technologies, Bhilai</span>
             </div>
           </div>
           <div
@@ -712,6 +711,15 @@
               href="mailto:irohitsahu97@gmail.com"
               >irohitsahu97@gmail.com</a
             >
+            <a
+              data-aos="zoom-out"
+              data-aos-delay="700"
+              onclick="viewResume()"
+              class="icon btn outline d-flex justify-content-center align-items-center gap-3"
+            >
+              <img src="icon/download.svg" alt="contact" />
+              <span>Download Resume</span></a
+            >
           </div>
         </div>
       </div>
@@ -727,6 +735,14 @@
     ></script>
     <script defer type="text/javascript" src="scripts/pageLoad.js"></script>
     <script defer type="text/javascript" src="scripts/aos.js"></script>
+    <script>
+      function viewResume() {
+        window.open(
+          "https://1drv.ms/b/c/a9cba01e5b8747cc/EXKRbSkj0o5JuA1kVRx8D-YBn714RDLoGQrLS5Hwp3GFgg",
+          "_blank"
+        );
+      }
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         AOS.init({ offset: -200, once: false, mirror: true, duration: 300 });

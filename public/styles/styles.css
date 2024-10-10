@@ -189,6 +189,17 @@ nav {
   z-index: 3;
 }
 
+.download-resume-btn {
+  position: fixed;
+  right: 1rem;
+  top: 4.7rem;
+  z-index: 3 !important;
+  border: none !important;
+  padding: 0 !important;
+  text-decoration: underline;
+  font-size: 14px !important;
+}
+
 @property --fillSize {
   syntax: "<percentage>";
   inherits: true;
@@ -751,6 +762,19 @@ footer {
 
 .marquee div span {
   color: var(--primaryText);
+}
+
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.gap-3 {
+  gap: 0.6rem;
 }
 
 @keyframes shake {
