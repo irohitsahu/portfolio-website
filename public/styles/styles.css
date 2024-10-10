@@ -244,7 +244,7 @@ nav {
   display: inline-block;
   font-weight: 100;
   font-size: 30px;
-  color: #2e3d48;
+  color: #ffffff;
   animation: 1s blink step-end infinite;
 }
 @keyframes blink {
@@ -253,7 +253,7 @@ nav {
     color: transparent;
   }
   50% {
-    color: black;
+    color: #ffffff;
   }
 }
 
@@ -678,7 +678,7 @@ nav {
 }
 
 .submit-btn {
-  width: 100px;
+  /* width: 100px; */
 }
 footer {
   background-color: var(--dakHeader);
@@ -764,6 +764,14 @@ footer {
   color: var(--primaryText);
 }
 
+.error-msg {
+  color: #ff0000;
+  font-size: 12px;
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+}
+
 .d-flex {
   display: flex;
 }
@@ -821,6 +829,10 @@ footer {
 
 .font-xs {
   font-size: 0.8rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 *::-webkit-scrollbar {

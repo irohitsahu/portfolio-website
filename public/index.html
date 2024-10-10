@@ -370,7 +370,7 @@
               showcase my skills and projects.
             </div>
           </div>
-          <div data-aos="zoom-out" data-aos-delay="150" class="project-card">
+          <!-- <div data-aos="zoom-out" data-aos-delay="150" class="project-card">
             <div class="project-head-wrapper">
               <div class="project-head-decoration">Portfolio Website V2</div>
               <span class="project-link">
@@ -384,9 +384,9 @@
                     alt="repo"
                   />
                 </a>
-                <!-- <a href="http://" title="Live Link">
+                <a href="http://" title="Live Link">
                   <img class="icn-size" src="icon/external-link.svg" alt="live" />
-                </a> -->
+                </a>
               </span>
             </div>
             <div class="project-date-decoration">(June 2024)</div>
@@ -399,38 +399,8 @@
               experience, and additional features to better represent my
               capabilities.
             </div>
-          </div>
-          <div data-aos="zoom-out" data-aos-delay="200" class="project-card">
-            <div class="project-head-wrapper">
-              <div class="project-head-decoration">OpenAI Image Generator</div>
-              <span class="project-link">
-                <a
-                  href="https://github.com/irohitsahu/openai-text-to-image"
-                  title="Github"
-                >
-                  <img
-                    class="icn-size"
-                    src="icon/github-outline.svg"
-                    alt="repo"
-                  />
-                </a>
-                <!-- <a href="http://" title="Live Link">
-                  <img class="icn-size" src="icon/external-link.svg" alt="live" />
-                </a> -->
-              </span>
-            </div>
-            <div class="project-date-decoration">(June 2024)</div>
-            <div class="project-tech-stack">
-              Tech Stack – Vite, ReactJS, TypeScript, Tailwind, RapidAPI -
-              OpenAI-DALL-E3
-            </div>
-
-            <div class="project-about">
-              Created an image generator leveraging OpenAI's API to produce
-              custom images based on user inputs.
-            </div>
-          </div>
-          <div data-aos="zoom-out" data-aos-delay="250" class="project-card">
+          </div> -->
+          <div data-aos="zoom-out" data-aos-delay="150" class="project-card">
             <div class="project-head-wrapper">
               <div class="project-head-decoration">Hire Path</div>
               <span class="project-link">
@@ -459,7 +429,36 @@
               features for job postings, applications, and candidate tracking.
             </div>
           </div>
-          <div data-aos="zoom-out" data-aos-delay="300" class="project-card">
+          <div data-aos="zoom-out" data-aos-delay="200" class="project-card">
+            <div class="project-head-wrapper">
+              <div class="project-head-decoration">Sell In Seconds</div>
+              <span class="project-link">
+                <a
+                  href="https://github.com/irohitsahu/SellInSeconds"
+                  title="Github"
+                >
+                  <img
+                    class="icn-size"
+                    src="icon/github-outline.svg"
+                    alt="repo"
+                  />
+                </a>
+                <!-- <a href="http://" title="Live Link">
+                  <img class="icn-size" src="icon/external-link.svg" alt="live" />
+                </a> -->
+              </span>
+            </div>
+            <div class="project-date-decoration">(Aug 2024)</div>
+            <div class="project-tech-stack">
+              Tech Stack - Vite, Next, Redux, Tailwind, ShadeCN
+            </div>
+
+            <div class="project-about">
+              Developed a platform to streamline the hiring process, including
+              features for job postings, applications, and candidate tracking.
+            </div>
+          </div>
+          <div data-aos="zoom-out" data-aos-delay="250" class="project-card">
             <div class="project-head-wrapper">
               <div class="project-head-decoration">Phonebook</div>
               <span class="project-link">
@@ -487,6 +486,40 @@
             <div class="project-about">
               Built a comprehensive phonebook application with features for
               adding, editing, and managing contact information efficiently.
+            </div>
+          </div>
+          <div data-aos="zoom-out" data-aos-delay="300" class="project-card">
+            <div class="project-head-wrapper">
+              <div class="project-head-decoration">OpenAI Image Generator</div>
+              <span class="project-link">
+                <a
+                  href="https://github.com/irohitsahu/openai-text-to-image"
+                  title="Github"
+                >
+                  <img
+                    class="icn-size"
+                    src="icon/github-outline.svg"
+                    alt="repo"
+                  />
+                </a>
+                <!-- <a href="http://" title="Live Link">
+                  <img
+                    class="icn-size"
+                    src="icon/external-link.svg"
+                    alt="live"
+                  />
+                </a> -->
+              </span>
+            </div>
+            <div class="project-date-decoration">(June 2024)</div>
+            <div class="project-tech-stack">
+              Tech Stack – Vite, ReactJS, TypeScript, Tailwind, RapidAPI -
+              OpenAI-DALL-E3
+            </div>
+
+            <div class="project-about">
+              Created an image generator leveraging OpenAI's API to produce
+              custom images based on user inputs.
             </div>
           </div>
         </div>
@@ -608,7 +641,11 @@
         />
         <!-- <h1 class="section-subheading">Contact Me</h1> -->
         <div class="contact-info-wrapper">
-          <form onsubmit="handleFormSubmit(event)" class="contact-me-form">
+          <form
+            method="post"
+            onsubmit="handleFormSubmit(event)"
+            class="contact-me-form"
+          >
             <div data-aos="zoom-out" data-aos-delay="100" class="input-wrapper">
               <label>Name*<span class="error-msg" name="name"></span></label>
               <input
@@ -616,8 +653,9 @@
                 type="text"
                 name="name"
                 placeholder="Enter Your Name"
-                onchange="handleFormInputChange(event)"
+                onchange="handleFormInputChange(this)"
               />
+              <label class="error-msg em-name"></label>
             </div>
             <div data-aos="zoom-out" data-aos-delay="200" class="input-wrapper">
               <label
@@ -628,8 +666,9 @@
                 type="text"
                 name="mobile"
                 placeholder="Enter Your Mobile Number"
-                onchange="handleFormInputChange(event)"
+                onchange="handleFormInputChange(this)"
               />
+              <label class="error-msg em-mobile"></label>
             </div>
             <div data-aos="zoom-out" data-aos-delay="300" class="input-wrapper">
               <label>Email*<span class="error-msg" name="email"></span></label>
@@ -638,25 +677,34 @@
                 type="text"
                 name="email"
                 placeholder="Enter Your Email"
-                onchange="handleFormInputChange(event)"
+                onchange="handleFormInputChange(this)"
               />
+              <label class="error-msg em-email"></label>
             </div>
             <div data-aos="zoom-out" data-aos-delay="400" class="input-wrapper">
               <label
                 >You Message<span class="error-msg" name="message"></span
               ></label>
               <textarea
+                name="message"
                 class="input"
                 type="text"
                 name="message"
                 placeholder="Send Me A Message"
                 rows="5"
-                onchange="handleFormInputChange(event)"
+                onchange="handleFormInputChange(this)"
               ></textarea>
+              <label class="error-msg em-message"></label>
             </div>
-            <div data-aos="zoom-out" data-aos-delay="500">
-              <button type="submit" class="btn submit-btn">Submit</button>
-            </div>
+            <button
+              data-aos="zoom-out"
+              data-aos-delay="500"
+              type="submit"
+              class="btn submit-btn"
+              onclick="(e)=> e.preventDefault()"
+            >
+              Submit
+            </button>
           </form>
           <div class="contact-info-item">
             <img
