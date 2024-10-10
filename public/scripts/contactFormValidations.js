@@ -22,12 +22,6 @@ function validateEmail(email) {
 function validateMobile(mobile) {
   const regex = /^(?:\+91|0)?[0-9]{10}$/;
   return regex.test(mobile);
-
-  error = {
-    ...error,
-    [name]: null,
-  };
-  renderErrors();
 }
 
 function validateInput() {
@@ -80,7 +74,7 @@ function handleFormSubmit(e) {
       ...defaultFormValue,
       access_key: "4b94d08b-901f-4837-bf4b-2b8496cabc74",
     };
-    console.log("Form submitted successfully", defaultFormValue);
+    alert("Your Details has been sent successfully");
     const json = JSON.stringify(defaultFormValue);
     console.log(json);
     submitBtn.innerHTML = "Please wait...";

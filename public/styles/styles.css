@@ -653,15 +653,6 @@ nav {
   grid-column: span 12 / span 12;
 }
 
-.error-msg {
-  position: absolute;
-  right: 0;
-  color: #ba000d;
-  font-weight: 600;
-  font-size: 12px;
-  display: none;
-}
-
 .input-wrapper {
   display: flex;
   flex-direction: column;
