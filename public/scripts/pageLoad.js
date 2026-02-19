@@ -35,7 +35,7 @@ async function typeWelcome() {
   const messages = [
     "Hey there!👋",
     "I'm Rohit Sahu",
-    "A front-end developer with expertise in transforming design visions into interactive experiences.",
+    "A Full-Stack Developer crafting complete digital experiences from intuitive frontends to powerful backends.",
     "Welcome to my portfolio! 🚀✨",
   ];
 

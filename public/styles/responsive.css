@@ -71,6 +71,8 @@
   }
   .prof-exp {
     grid-column: 1 / 6;
+    max-height: 200px;
+    overflow: auto;
   }
 
   #skills {
