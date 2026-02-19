@@ -72,7 +72,7 @@ function handleFormSubmit(e) {
   if (isFormValid) {
     defaultFormValue = {
       ...defaultFormValue,
-      access_key: "4b94d08b-901f-4837-bf4b-2b8496cabc74",
+      access_key: PORTFOLIO_DATA.contactForm.accessKey,
     };
     alert("Your Details has been sent successfully");
     const json = JSON.stringify(defaultFormValue);
